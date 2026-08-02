@@ -1,0 +1,40 @@
+﻿using FitnessCentar.Entities;
+
+namespace FitnessCentar.App.DTOs
+{
+    public class KorisnikDTO
+    {
+        public int KorisnikId { get; set; }
+
+        public string Ime { get; set; } = "";
+
+        public string Prezime { get; set; } = "";
+
+        public DateTime DatumRodjenja { get; set; }
+
+        public Pol? Pol { get; set; }
+
+        public string? Telefon { get; set; }
+
+        public string? Email { get; set; }
+
+        public string? Ulica { get; set; }
+
+        public string? Grad { get; set; }
+
+        public string? PostanskiBroj { get; set; }
+
+        public DateTime DatumUclanjenja { get; set; }
+
+        public StatusClanstva StatusClanstva { get; set; }
+
+        // Za prikaz u tabeli - da li korisnik pripada datoj kategoriji
+        public bool JeRekreativac { get; set; }
+
+        public bool JeProfesionalniSportista { get; set; }
+
+        public bool JeRehabilitacioniKorisnik { get; set; }
+
+        public IList<string> Ciljevi { get; set; } = new List<string>();
+    }
+}
