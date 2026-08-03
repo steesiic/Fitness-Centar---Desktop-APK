@@ -16,16 +16,14 @@ namespace FitnessCentar.App.Services.Implementation
             _dataLayer = dataLayer;
         }
 
-        public ServiceResult<IList<KorisnikDTO>> GetAll()
+        public async Task<ServiceResult<IList<KorisnikDTO>>> GetAllAsync()
         {
             var session = _dataLayer.OpenSession();
 
             try
             {
-                var korisnici = session.Query<Korisnik>()
-                    .ToList()
-                    .Select(k => k.ToKorisnikDTO())
-                    .ToList();
+                var korisniciEntiteti = await session.Query<Korisnik>().ToListAsync();
+                var korisnici = korisniciEntiteti.Select(k => k.ToKorisnikDTO()).ToList();
 
                 return ServiceResult<IList<KorisnikDTO>>.Success(korisnici);
             }
@@ -39,7 +37,7 @@ namespace FitnessCentar.App.Services.Implementation
             }
         }
 
-        public ServiceResult<bool> AddKorisnik(KorisnikDTO korisnikDto)
+        public async Task<ServiceResult<bool>> AddKorisnikAsync(KorisnikDTO korisnikDto)
         {
             var session = _dataLayer.OpenSession();
 
@@ -47,8 +45,8 @@ namespace FitnessCentar.App.Services.Implementation
             {
                 Korisnik noviKorisnik = korisnikDto.CreateNewEntity();
 
-                session.Save(noviKorisnik);
-                session.Flush();
+                await session.SaveAsync(noviKorisnik);
+                await session.FlushAsync();
 
                 return ServiceResult<bool>.Success(true);
             }
@@ -62,13 +60,13 @@ namespace FitnessCentar.App.Services.Implementation
             }
         }
 
-        public ServiceResult<bool> UpdateKorisnik(KorisnikDTO korisnikDto)
+        public async Task<ServiceResult<bool>> UpdateKorisnikAsync(KorisnikDTO korisnikDto)
         {
             var session = _dataLayer.OpenSession();
 
             try
             {
-                Korisnik? korisnik = session.Get<Korisnik>(korisnikDto.KorisnikId);
+                Korisnik? korisnik = await session.GetAsync<Korisnik>(korisnikDto.KorisnikId);
                 if (korisnik == null)
                 {
                     return ServiceResult<bool>.Failure("Korisnik sa datim ID-jem ne postoji.");
@@ -80,8 +78,8 @@ namespace FitnessCentar.App.Services.Implementation
                 korisnik.Email = korisnikDto.Email;
                 korisnik.StatusClanstva = korisnikDto.StatusClanstva;
 
-                session.SaveOrUpdate(korisnik);
-                session.Flush();
+                await session.SaveOrUpdateAsync(korisnik);
+                await session.FlushAsync();
 
                 return ServiceResult<bool>.Success(true);
             }
@@ -95,20 +93,20 @@ namespace FitnessCentar.App.Services.Implementation
             }
         }
 
-        public ServiceResult<bool> DeleteKorisnik(int korisnikId)
+        public async Task<ServiceResult<bool>> DeleteKorisnikAsync(int korisnikId)
         {
             var session = _dataLayer.OpenSession();
 
             try
             {
-                Korisnik? korisnik = session.Get<Korisnik>(korisnikId);
+                Korisnik? korisnik = await session.GetAsync<Korisnik>(korisnikId);
                 if (korisnik == null)
                 {
                     return ServiceResult<bool>.Failure("Korisnik sa datim ID-jem ne postoji.");
                 }
 
-                session.Delete(korisnik);
-                session.Flush();
+                await session.DeleteAsync(korisnik);
+                await session.FlushAsync();
 
                 return ServiceResult<bool>.Success(true);
             }

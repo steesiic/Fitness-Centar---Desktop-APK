@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FitnessCentar")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+40abb6385446073d516df25f1c429e842362c2be")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8e26cd45fe87a372054715dc84b4b663ef93c3e5")]
 [assembly: System.Reflection.AssemblyProductAttribute("FitnessCentar")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FitnessCentar")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

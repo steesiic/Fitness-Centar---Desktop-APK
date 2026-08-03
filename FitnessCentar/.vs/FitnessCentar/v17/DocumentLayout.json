@@ -3,56 +3,32 @@
   "WorkspaceRootPath": "D:\\faks\\TRECA GODINA\\sistemi baza\\projekti\\Fitness-Centar---Desktop-APK\\FitnessCentar\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FD70C152-79C8-48BB-9B61-18D18C7F7C2B}|FitnessCentar.csproj|d:\\faks\\treca godina\\sistemi baza\\projekti\\fitness-centar---desktop-apk\\fitnesscentar\\data\\datalayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FD70C152-79C8-48BB-9B61-18D18C7F7C2B}|FitnessCentar.csproj|solutionrelative:data\\datalayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FD70C152-79C8-48BB-9B61-18D18C7F7C2B}|FitnessCentar.csproj|d:\\faks\\treca godina\\sistemi baza\\projekti\\fitness-centar---desktop-apk\\fitnesscentar\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD70C152-79C8-48BB-9B61-18D18C7F7C2B}|FitnessCentar.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD70C152-79C8-48BB-9B61-18D18C7F7C2B}|FitnessCentar.csproj|d:\\faks\\treca godina\\sistemi baza\\projekti\\fitness-centar---desktop-apk\\fitnesscentar\\infrastructure\\mappers\\profesionalnisportistamapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FD70C152-79C8-48BB-9B61-18D18C7F7C2B}|FitnessCentar.csproj|solutionrelative:infrastructure\\mappers\\profesionalnisportistamapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FD70C152-79C8-48BB-9B61-18D18C7F7C2B}|FitnessCentar.csproj|d:\\faks\\treca godina\\sistemi baza\\projekti\\fitness-centar---desktop-apk\\fitnesscentar\\presentation\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD70C152-79C8-48BB-9B61-18D18C7F7C2B}|FitnessCentar.csproj|solutionrelative:presentation\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD70C152-79C8-48BB-9B61-18D18C7F7C2B}|FitnessCentar.csproj|d:\\faks\\treca godina\\sistemi baza\\projekti\\fitness-centar---desktop-apk\\fitnesscentar\\entities\\korisnik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FD70C152-79C8-48BB-9B61-18D18C7F7C2B}|FitnessCentar.csproj|solutionrelative:entities\\korisnik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FD70C152-79C8-48BB-9B61-18D18C7F7C2B}|FitnessCentar.csproj|d:\\faks\\treca godina\\sistemi baza\\projekti\\fitness-centar---desktop-apk\\fitnesscentar\\app\\services\\interfaces\\iosobljeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD70C152-79C8-48BB-9B61-18D18C7F7C2B}|FitnessCentar.csproj|solutionrelative:app\\services\\interfaces\\iosobljeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD70C152-79C8-48BB-9B61-18D18C7F7C2B}|FitnessCentar.csproj|d:\\faks\\treca godina\\sistemi baza\\projekti\\fitness-centar---desktop-apk\\fitnesscentar\\app\\extensions\\korisnikextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FD70C152-79C8-48BB-9B61-18D18C7F7C2B}|FitnessCentar.csproj|solutionrelative:app\\extensions\\korisnikextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FD70C152-79C8-48BB-9B61-18D18C7F7C2B}|FitnessCentar.csproj|d:\\faks\\treca godina\\sistemi baza\\projekti\\fitness-centar---desktop-apk\\fitnesscentar\\app\\dtos\\korisnikdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FD70C152-79C8-48BB-9B61-18D18C7F7C2B}|FitnessCentar.csproj|solutionrelative:app\\dtos\\korisnikdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FD70C152-79C8-48BB-9B61-18D18C7F7C2B}|FitnessCentar.csproj|d:\\faks\\treca godina\\sistemi baza\\projekti\\fitness-centar---desktop-apk\\fitnesscentar\\app\\services\\implementation\\korisnikservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FD70C152-79C8-48BB-9B61-18D18C7F7C2B}|FitnessCentar.csproj|solutionrelative:app\\services\\implementation\\korisnikservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FD70C152-79C8-48BB-9B61-18D18C7F7C2B}|FitnessCentar.csproj|d:\\faks\\treca godina\\sistemi baza\\projekti\\fitness-centar---desktop-apk\\fitnesscentar\\app\\services\\implementation\\osobljeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD70C152-79C8-48BB-9B61-18D18C7F7C2B}|FitnessCentar.csproj|solutionrelative:app\\services\\implementation\\osobljeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FD70C152-79C8-48BB-9B61-18D18C7F7C2B}|FitnessCentar.csproj|d:\\faks\\treca godina\\sistemi baza\\projekti\\fitness-centar---desktop-apk\\fitnesscentar\\app\\services\\interfaces\\ikorisnikservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD70C152-79C8-48BB-9B61-18D18C7F7C2B}|FitnessCentar.csproj|solutionrelative:app\\services\\interfaces\\ikorisnikservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD70C152-79C8-48BB-9B61-18D18C7F7C2B}|FitnessCentar.csproj|d:\\faks\\treca godina\\sistemi baza\\projekti\\fitness-centar---desktop-apk\\fitnesscentar\\app\\services\\serviceresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FD70C152-79C8-48BB-9B61-18D18C7F7C2B}|FitnessCentar.csproj|solutionrelative:app\\services\\serviceresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FD70C152-79C8-48BB-9B61-18D18C7F7C2B}|FitnessCentar.csproj|d:\\faks\\treca godina\\sistemi baza\\projekti\\fitness-centar---desktop-apk\\fitnesscentar\\app\\services\\implementation\\korisnikservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD70C152-79C8-48BB-9B61-18D18C7F7C2B}|FitnessCentar.csproj|solutionrelative:app\\services\\implementation\\korisnikservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD70C152-79C8-48BB-9B61-18D18C7F7C2B}|FitnessCentar.csproj|d:\\faks\\treca godina\\sistemi baza\\projekti\\fitness-centar---desktop-apk\\fitnesscentar\\infrastructure\\mappers\\korisnikmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FD70C152-79C8-48BB-9B61-18D18C7F7C2B}|FitnessCentar.csproj|solutionrelative:infrastructure\\mappers\\korisnikmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FD70C152-79C8-48BB-9B61-18D18C7F7C2B}|FitnessCentar.csproj|d:\\faks\\treca godina\\sistemi baza\\projekti\\fitness-centar---desktop-apk\\fitnesscentar\\infrastructure\\mappers\\rekreativacmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FD70C152-79C8-48BB-9B61-18D18C7F7C2B}|FitnessCentar.csproj|solutionrelative:infrastructure\\mappers\\rekreativacmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FD70C152-79C8-48BB-9B61-18D18C7F7C2B}|FitnessCentar.csproj|d:\\faks\\treca godina\\sistemi baza\\projekti\\fitness-centar---desktop-apk\\fitnesscentar\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{FD70C152-79C8-48BB-9B61-18D18C7F7C2B}|FitnessCentar.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FD70C152-79C8-48BB-9B61-18D18C7F7C2B}|FitnessCentar.csproj|d:\\faks\\treca godina\\sistemi baza\\projekti\\fitness-centar---desktop-apk\\fitnesscentar\\presentation\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FD70C152-79C8-48BB-9B61-18D18C7F7C2B}|FitnessCentar.csproj|solutionrelative:presentation\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FD70C152-79C8-48BB-9B61-18D18C7F7C2B}|FitnessCentar.csproj|D:\\faks\\TRECA GODINA\\sistemi baza\\projekti\\Fitness-Centar---Desktop-APK\\FitnessCentar\\presentation\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FD70C152-79C8-48BB-9B61-18D18C7F7C2B}|FitnessCentar.csproj|solutionrelative:presentation\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FD70C152-79C8-48BB-9B61-18D18C7F7C2B}|FitnessCentar.csproj|d:\\faks\\treca godina\\sistemi baza\\projekti\\fitness-centar---desktop-apk\\fitnesscentar\\app\\dtos\\osobljedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD70C152-79C8-48BB-9B61-18D18C7F7C2B}|FitnessCentar.csproj|solutionrelative:app\\dtos\\osobljedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,45 +38,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Korisnik.cs",
-              "DocumentMoniker": "D:\\faks\\TRECA GODINA\\sistemi baza\\projekti\\Fitness-Centar---Desktop-APK\\FitnessCentar\\Entities\\Korisnik.cs",
-              "RelativeDocumentMoniker": "Entities\\Korisnik.cs",
-              "ToolTip": "D:\\faks\\TRECA GODINA\\sistemi baza\\projekti\\Fitness-Centar---Desktop-APK\\FitnessCentar\\Entities\\Korisnik.cs",
-              "RelativeToolTip": "Entities\\Korisnik.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Title": "IOsobljeService.cs",
+              "DocumentMoniker": "D:\\faks\\TRECA GODINA\\sistemi baza\\projekti\\Fitness-Centar---Desktop-APK\\FitnessCentar\\App\\Services\\Interfaces\\IOsobljeService.cs",
+              "RelativeDocumentMoniker": "App\\Services\\Interfaces\\IOsobljeService.cs",
+              "ToolTip": "D:\\faks\\TRECA GODINA\\sistemi baza\\projekti\\Fitness-Centar---Desktop-APK\\FitnessCentar\\App\\Services\\Interfaces\\IOsobljeService.cs",
+              "RelativeToolTip": "App\\Services\\Interfaces\\IOsobljeService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-02T21:25:47.582Z",
+              "WhenOpened": "2026-08-03T22:36:12.051Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "KorisnikExtensions.cs",
-              "DocumentMoniker": "D:\\faks\\TRECA GODINA\\sistemi baza\\projekti\\Fitness-Centar---Desktop-APK\\FitnessCentar\\App\\Extensions\\KorisnikExtensions.cs",
-              "RelativeDocumentMoniker": "App\\Extensions\\KorisnikExtensions.cs",
-              "ToolTip": "D:\\faks\\TRECA GODINA\\sistemi baza\\projekti\\Fitness-Centar---Desktop-APK\\FitnessCentar\\App\\Extensions\\KorisnikExtensions.cs",
-              "RelativeToolTip": "App\\Extensions\\KorisnikExtensions.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAA5wAAAAAAAAAAA",
+              "Title": "OsobljeService.cs",
+              "DocumentMoniker": "D:\\faks\\TRECA GODINA\\sistemi baza\\projekti\\Fitness-Centar---Desktop-APK\\FitnessCentar\\App\\Services\\Implementation\\OsobljeService.cs",
+              "RelativeDocumentMoniker": "App\\Services\\Implementation\\OsobljeService.cs",
+              "ToolTip": "D:\\faks\\TRECA GODINA\\sistemi baza\\projekti\\Fitness-Centar---Desktop-APK\\FitnessCentar\\App\\Services\\Implementation\\OsobljeService.cs",
+              "RelativeToolTip": "App\\Services\\Implementation\\OsobljeService.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAIwFoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-02T21:25:38.548Z",
+              "WhenOpened": "2026-08-03T22:35:00.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "D:\\faks\\TRECA GODINA\\sistemi baza\\projekti\\Fitness-Centar---Desktop-APK\\FitnessCentar\\Presentation\\MainForm.cs",
+              "RelativeDocumentMoniker": "Presentation\\MainForm.cs",
+              "ToolTip": "D:\\faks\\TRECA GODINA\\sistemi baza\\projekti\\Fitness-Centar---Desktop-APK\\FitnessCentar\\Presentation\\MainForm.cs",
+              "RelativeToolTip": "Presentation\\MainForm.cs",
+              "ViewState": "AQIAAJUAAAAAAAAAAAAowDABAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-03T22:29:01.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\faks\\TRECA GODINA\\sistemi baza\\projekti\\Fitness-Centar---Desktop-APK\\FitnessCentar\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\faks\\TRECA GODINA\\sistemi baza\\projekti\\Fitness-Centar---Desktop-APK\\FitnessCentar\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAgwCkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-03T22:29:10.432Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "KorisnikDTO.cs",
-              "DocumentMoniker": "D:\\faks\\TRECA GODINA\\sistemi baza\\projekti\\Fitness-Centar---Desktop-APK\\FitnessCentar\\App\\DTOs\\KorisnikDTO.cs",
-              "RelativeDocumentMoniker": "App\\DTOs\\KorisnikDTO.cs",
-              "ToolTip": "D:\\faks\\TRECA GODINA\\sistemi baza\\projekti\\Fitness-Centar---Desktop-APK\\FitnessCentar\\App\\DTOs\\KorisnikDTO.cs",
-              "RelativeToolTip": "App\\DTOs\\KorisnikDTO.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Title": "IKorisnikService.cs",
+              "DocumentMoniker": "D:\\faks\\TRECA GODINA\\sistemi baza\\projekti\\Fitness-Centar---Desktop-APK\\FitnessCentar\\App\\Services\\Interfaces\\IKorisnikService.cs",
+              "RelativeDocumentMoniker": "App\\Services\\Interfaces\\IKorisnikService.cs",
+              "ToolTip": "D:\\faks\\TRECA GODINA\\sistemi baza\\projekti\\Fitness-Centar---Desktop-APK\\FitnessCentar\\App\\Services\\Interfaces\\IKorisnikService.cs",
+              "RelativeToolTip": "App\\Services\\Interfaces\\IKorisnikService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-02T21:25:30.997Z",
+              "WhenOpened": "2026-08-03T22:35:10.459Z",
               "EditorCaption": ""
             },
             {
@@ -111,125 +113,22 @@
               "RelativeDocumentMoniker": "App\\Services\\Implementation\\KorisnikService.cs",
               "ToolTip": "D:\\faks\\TRECA GODINA\\sistemi baza\\projekti\\Fitness-Centar---Desktop-APK\\FitnessCentar\\App\\Services\\Implementation\\KorisnikService.cs",
               "RelativeToolTip": "App\\Services\\Implementation\\KorisnikService.cs",
-              "ViewState": "AQIAAFYAAAAAAAAAAAAIwAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-02T21:25:24.135Z",
+              "WhenOpened": "2026-08-03T22:34:56.731Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "IKorisnikService.cs",
-              "DocumentMoniker": "D:\\faks\\TRECA GODINA\\sistemi baza\\projekti\\Fitness-Centar---Desktop-APK\\FitnessCentar\\App\\Services\\Interfaces\\IKorisnikService.cs",
-              "RelativeDocumentMoniker": "App\\Services\\Interfaces\\IKorisnikService.cs",
-              "ToolTip": "D:\\faks\\TRECA GODINA\\sistemi baza\\projekti\\Fitness-Centar---Desktop-APK\\FitnessCentar\\App\\Services\\Interfaces\\IKorisnikService.cs",
-              "RelativeToolTip": "App\\Services\\Interfaces\\IKorisnikService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "OsobljeDTO.cs",
+              "DocumentMoniker": "D:\\faks\\TRECA GODINA\\sistemi baza\\projekti\\Fitness-Centar---Desktop-APK\\FitnessCentar\\App\\DTOs\\OsobljeDTO.cs",
+              "RelativeDocumentMoniker": "App\\DTOs\\OsobljeDTO.cs",
+              "ToolTip": "D:\\faks\\TRECA GODINA\\sistemi baza\\projekti\\Fitness-Centar---Desktop-APK\\FitnessCentar\\App\\DTOs\\OsobljeDTO.cs",
+              "RelativeToolTip": "App\\DTOs\\OsobljeDTO.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAywAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-02T21:25:21.766Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ServiceResult.cs",
-              "DocumentMoniker": "D:\\faks\\TRECA GODINA\\sistemi baza\\projekti\\Fitness-Centar---Desktop-APK\\FitnessCentar\\App\\Services\\ServiceResult.cs",
-              "RelativeDocumentMoniker": "App\\Services\\ServiceResult.cs",
-              "ToolTip": "D:\\faks\\TRECA GODINA\\sistemi baza\\projekti\\Fitness-Centar---Desktop-APK\\FitnessCentar\\App\\Services\\ServiceResult.cs",
-              "RelativeToolTip": "App\\Services\\ServiceResult.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-02T21:25:18.226Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DataLayer.cs",
-              "DocumentMoniker": "D:\\faks\\TRECA GODINA\\sistemi baza\\projekti\\Fitness-Centar---Desktop-APK\\FitnessCentar\\Data\\DataLayer.cs",
-              "RelativeDocumentMoniker": "Data\\DataLayer.cs",
-              "ToolTip": "D:\\faks\\TRECA GODINA\\sistemi baza\\projekti\\Fitness-Centar---Desktop-APK\\FitnessCentar\\Data\\DataLayer.cs",
-              "RelativeToolTip": "Data\\DataLayer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABRAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-02T21:11:16.966Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "RekreativacMapper.cs",
-              "DocumentMoniker": "D:\\faks\\TRECA GODINA\\sistemi baza\\projekti\\Fitness-Centar---Desktop-APK\\FitnessCentar\\Infrastructure\\Mappers\\RekreativacMapper.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Mappers\\RekreativacMapper.cs",
-              "ToolTip": "D:\\faks\\TRECA GODINA\\sistemi baza\\projekti\\Fitness-Centar---Desktop-APK\\FitnessCentar\\Infrastructure\\Mappers\\RekreativacMapper.cs",
-              "RelativeToolTip": "Infrastructure\\Mappers\\RekreativacMapper.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-02T21:11:07.875Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProfesionalniSportistaMapper.cs",
-              "DocumentMoniker": "D:\\faks\\TRECA GODINA\\sistemi baza\\projekti\\Fitness-Centar---Desktop-APK\\FitnessCentar\\Infrastructure\\Mappers\\ProfesionalniSportistaMapper.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Mappers\\ProfesionalniSportistaMapper.cs",
-              "ToolTip": "D:\\faks\\TRECA GODINA\\sistemi baza\\projekti\\Fitness-Centar---Desktop-APK\\FitnessCentar\\Infrastructure\\Mappers\\ProfesionalniSportistaMapper.cs",
-              "RelativeToolTip": "Infrastructure\\Mappers\\ProfesionalniSportistaMapper.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-02T21:11:06.887Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "KorisnikMapper.cs",
-              "DocumentMoniker": "D:\\faks\\TRECA GODINA\\sistemi baza\\projekti\\Fitness-Centar---Desktop-APK\\FitnessCentar\\Infrastructure\\Mappers\\KorisnikMapper.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Mappers\\KorisnikMapper.cs",
-              "ToolTip": "D:\\faks\\TRECA GODINA\\sistemi baza\\projekti\\Fitness-Centar---Desktop-APK\\FitnessCentar\\Infrastructure\\Mappers\\KorisnikMapper.cs",
-              "RelativeToolTip": "Infrastructure\\Mappers\\KorisnikMapper.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-02T21:10:54.978Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "app.config",
-              "DocumentMoniker": "D:\\faks\\TRECA GODINA\\sistemi baza\\projekti\\Fitness-Centar---Desktop-APK\\FitnessCentar\\app.config",
-              "RelativeDocumentMoniker": "app.config",
-              "ToolTip": "D:\\faks\\TRECA GODINA\\sistemi baza\\projekti\\Fitness-Centar---Desktop-APK\\FitnessCentar\\app.config",
-              "RelativeToolTip": "app.config",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2026-08-02T21:10:21.441Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "MainForm.cs [Design]",
-              "DocumentMoniker": "D:\\faks\\TRECA GODINA\\sistemi baza\\projekti\\Fitness-Centar---Desktop-APK\\FitnessCentar\\Presentation\\MainForm.cs",
-              "RelativeDocumentMoniker": "Presentation\\MainForm.cs",
-              "ToolTip": "D:\\faks\\TRECA GODINA\\sistemi baza\\projekti\\Fitness-Centar---Desktop-APK\\FitnessCentar\\Presentation\\MainForm.cs [Design]",
-              "RelativeToolTip": "Presentation\\MainForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-01T21:44:52.738Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "MainForm.cs",
-              "DocumentMoniker": "D:\\faks\\TRECA GODINA\\sistemi baza\\projekti\\Fitness-Centar---Desktop-APK\\FitnessCentar\\Presentation\\MainForm.cs",
-              "RelativeDocumentMoniker": "Presentation\\MainForm.cs",
-              "ToolTip": "D:\\faks\\TRECA GODINA\\sistemi baza\\projekti\\Fitness-Centar---Desktop-APK\\FitnessCentar\\Presentation\\MainForm.cs",
-              "RelativeToolTip": "Presentation\\MainForm.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-01T21:41:04.056Z",
+              "WhenOpened": "2026-08-03T22:26:39.182Z",
               "EditorCaption": ""
             }
           ]

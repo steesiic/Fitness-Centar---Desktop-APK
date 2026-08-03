@@ -4,12 +4,12 @@ namespace FitnessCentar.App.Services.Interfaces
 {
     public interface IKorisnikService
     {
-        ServiceResult<IList<KorisnikDTO>> GetAll();
+        Task<ServiceResult<IList<KorisnikDTO>>> GetAllAsync();
 
-        ServiceResult<bool> AddKorisnik(KorisnikDTO korisnikDto);
+        Task<ServiceResult<bool>> AddKorisnikAsync(KorisnikDTO korisnikDto);
 
-        ServiceResult<bool> UpdateKorisnik(KorisnikDTO korisnikDto);
+        Task<ServiceResult<bool>> UpdateKorisnikAsync(KorisnikDTO korisnikDto);
 
-        ServiceResult<bool> DeleteKorisnik(int korisnikId);
+        Task<ServiceResult<bool>> DeleteKorisnikAsync(int korisnikId);
     }
 }
