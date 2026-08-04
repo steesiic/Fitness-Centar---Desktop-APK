@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Milanche\\Desktop\\faks\\3. Godina\\Sistemi Baza\\Fitness-Centar---Desktop-APK\\FitnessCentar\\FitnessCentar.csproj": {}
+    "D:\\faks\\TRECA GODINA\\sistemi baza\\projekti\\Fitness-Centar---Desktop-APK\\FitnessCentar\\FitnessCentar.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Milanche\\Desktop\\faks\\3. Godina\\Sistemi Baza\\Fitness-Centar---Desktop-APK\\FitnessCentar\\FitnessCentar.csproj": {
+    "D:\\faks\\TRECA GODINA\\sistemi baza\\projekti\\Fitness-Centar---Desktop-APK\\FitnessCentar\\FitnessCentar.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Milanche\\Desktop\\faks\\3. Godina\\Sistemi Baza\\Fitness-Centar---Desktop-APK\\FitnessCentar\\FitnessCentar.csproj",
+        "projectUniqueName": "D:\\faks\\TRECA GODINA\\sistemi baza\\projekti\\Fitness-Centar---Desktop-APK\\FitnessCentar\\FitnessCentar.csproj",
         "projectName": "FitnessCentar",
-        "projectPath": "C:\\Users\\Milanche\\Desktop\\faks\\3. Godina\\Sistemi Baza\\Fitness-Centar---Desktop-APK\\FitnessCentar\\FitnessCentar.csproj",
-        "packagesPath": "C:\\Users\\Milanche\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Milanche\\Desktop\\faks\\3. Godina\\Sistemi Baza\\Fitness-Centar---Desktop-APK\\FitnessCentar\\obj\\",
+        "projectPath": "D:\\faks\\TRECA GODINA\\sistemi baza\\projekti\\Fitness-Centar---Desktop-APK\\FitnessCentar\\FitnessCentar.csproj",
+        "packagesPath": "C:\\Users\\Korisnik 1\\.nuget\\packages\\",
+        "outputPath": "D:\\faks\\TRECA GODINA\\sistemi baza\\projekti\\Fitness-Centar---Desktop-APK\\FitnessCentar\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Milanche\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Korisnik 1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,8 +43,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
+        }
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -82,7 +85,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.315/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

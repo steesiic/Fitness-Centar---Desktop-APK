@@ -40,6 +40,12 @@ namespace FitnessCentar
             // Servisi - Klaster 6
             services.AddTransient<IPlanTreningaService, PlanTreningaService>();
 
+            // Servisi - Klaster 7
+            services.AddTransient<IPlanIshraneService, PlanIshraneService>();
+
+            // Servisi - Klaster 8
+            services.AddTransient<IMerenjeEvaluacijaService, MerenjeEvaluacijaService>();
+
             // Forme
             services.AddTransient<MainForm>();
 

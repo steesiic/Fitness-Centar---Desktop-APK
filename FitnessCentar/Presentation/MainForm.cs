@@ -14,6 +14,8 @@ namespace FitnessCentar.Presentation
         private readonly IFitnessProgramService _programService;
         private readonly ITreningService _treningService;
         private readonly IPlanTreningaService _planTreningaService;
+        private readonly IPlanIshraneService _planIshraneService;
+        private readonly IMerenjeEvaluacijaService _merenjeEvaluacijaService;
 
         private readonly TabControl _tabs = new() { Dock = DockStyle.Fill };
 
@@ -76,6 +78,28 @@ namespace FitnessCentar.Presentation
         private readonly Button _btnDodajVezbu = new() { Text = "4. Dodaj vežbu", Dock = DockStyle.Top, Height = 35 };
         private readonly Label _lblStatusPlanTreninga = new() { Dock = DockStyle.Bottom, Height = 30, TextAlign = ContentAlignment.MiddleLeft };
 
+        // --- Tab: Plan ishrane ---
+        private readonly DataGridView _gridPlanIshrane = new() { Dock = DockStyle.Fill, ReadOnly = true, AutoGenerateColumns = true };
+        private readonly Button _btnUcitajPlanoveIshrane = new() { Text = "Učitaj planove ishrane", Dock = DockStyle.Top, Height = 35 };
+        private readonly TextBox _txtKorisnikIdZaPlanIshrane = new() { Dock = DockStyle.Top, Height = 28, PlaceholderText = "ID korisnika (npr. 1)" };
+        private readonly TextBox _txtNutricionistaIdZaPlan = new() { Dock = DockStyle.Top, Height = 28, PlaceholderText = "ID osoblja - nutricionista (npr. 1)" };
+        private readonly Button _btnDodajPlanIshrane = new() { Text = "1. Dodaj plan ishrane", Dock = DockStyle.Top, Height = 35 };
+        private readonly TextBox _txtPlanIshraneIdZaObrok = new() { Dock = DockStyle.Top, Height = 28, PlaceholderText = "ID plana ishrane (dobijen iz koraka 1)" };
+        private readonly Button _btnDodajObrok = new() { Text = "2. Dodaj obrok", Dock = DockStyle.Top, Height = 35 };
+        private readonly TextBox _txtPlanIshraneIdZaOgranicenje = new() { Dock = DockStyle.Top, Height = 28, PlaceholderText = "ID plana ishrane (isti kao gore)" };
+        private readonly Button _btnDodajOgranicenje = new() { Text = "3. Dodaj ograničenje (bez glutena)", Dock = DockStyle.Top, Height = 35 };
+        private readonly Label _lblStatusPlanIshrane = new() { Dock = DockStyle.Bottom, Height = 30, TextAlign = ContentAlignment.MiddleLeft };
+
+        // --- Tab: Merenje i evaluacija ---
+        private readonly DataGridView _gridMerenja = new() { Dock = DockStyle.Fill, ReadOnly = true, AutoGenerateColumns = true, Height = 200 };
+        private readonly DataGridView _gridEvaluacije = new() { Dock = DockStyle.Fill, ReadOnly = true, AutoGenerateColumns = true };
+        private readonly Button _btnUcitajMerenjaEvaluacije = new() { Text = "Učitaj merenja i evaluacije", Dock = DockStyle.Top, Height = 40 };
+        private readonly TextBox _txtKorisnikIdZaMerenje = new() { Dock = DockStyle.Top, Height = 30, PlaceholderText = "ID korisnika (npr. 1)" };
+        private readonly TextBox _txtOsobljeIdZaMerenje = new() { Dock = DockStyle.Top, Height = 30, PlaceholderText = "ID osoblja koje meri (npr. 1)" };
+        private readonly Button _btnDodajMerenje = new() { Text = "Dodaj test merenje", Dock = DockStyle.Top, Height = 40 };
+        private readonly Button _btnDodajEvaluaciju = new() { Text = "Dodaj test evaluaciju (isti ID-jevi iznad)", Dock = DockStyle.Top, Height = 40 };
+        private readonly Label _lblStatusMerenjaEvaluacije = new() { Dock = DockStyle.Bottom, Height = 30, TextAlign = ContentAlignment.MiddleLeft };
+
         public MainForm(
             IKorisnikService korisnikService,
             IOsobljeService osobljeService,
@@ -84,7 +108,9 @@ namespace FitnessCentar.Presentation
             IClanarinaService clanarinaService,
             IFitnessProgramService programService,
             ITreningService treningService,
-            IPlanTreningaService planTreningaService)
+            IPlanTreningaService planTreningaService,
+            IPlanIshraneService planIshraneService,
+            IMerenjeEvaluacijaService merenjeEvaluacijaService)
         {
             _korisnikService = korisnikService;
             _osobljeService = osobljeService;
@@ -94,6 +120,8 @@ namespace FitnessCentar.Presentation
             _programService = programService;
             _treningService = treningService;
             _planTreningaService = planTreningaService;
+            _planIshraneService = planIshraneService;
+            _merenjeEvaluacijaService = merenjeEvaluacijaService;
 
             Text = "Fitness Centar - test NHibernate mapiranja";
             Width = 1050;
@@ -158,6 +186,28 @@ namespace FitnessCentar.Presentation
             tabPlanTreninga.Controls.Add(_txtKorisnikIdZaPlan);
             tabPlanTreninga.Controls.Add(_btnUcitajPlanove);
 
+            var tabPlanIshrane = new TabPage("Plan ishrane");
+            tabPlanIshrane.Controls.Add(_gridPlanIshrane);
+            tabPlanIshrane.Controls.Add(_lblStatusPlanIshrane);
+            tabPlanIshrane.Controls.Add(_btnDodajOgranicenje);
+            tabPlanIshrane.Controls.Add(_txtPlanIshraneIdZaOgranicenje);
+            tabPlanIshrane.Controls.Add(_btnDodajObrok);
+            tabPlanIshrane.Controls.Add(_txtPlanIshraneIdZaObrok);
+            tabPlanIshrane.Controls.Add(_btnDodajPlanIshrane);
+            tabPlanIshrane.Controls.Add(_txtNutricionistaIdZaPlan);
+            tabPlanIshrane.Controls.Add(_txtKorisnikIdZaPlanIshrane);
+            tabPlanIshrane.Controls.Add(_btnUcitajPlanoveIshrane);
+
+            var tabMerenjaEvaluacije = new TabPage("Merenje i evaluacija");
+            tabMerenjaEvaluacije.Controls.Add(_gridEvaluacije);
+            tabMerenjaEvaluacije.Controls.Add(_gridMerenja);
+            tabMerenjaEvaluacije.Controls.Add(_lblStatusMerenjaEvaluacije);
+            tabMerenjaEvaluacije.Controls.Add(_btnDodajEvaluaciju);
+            tabMerenjaEvaluacije.Controls.Add(_btnDodajMerenje);
+            tabMerenjaEvaluacije.Controls.Add(_txtOsobljeIdZaMerenje);
+            tabMerenjaEvaluacije.Controls.Add(_txtKorisnikIdZaMerenje);
+            tabMerenjaEvaluacije.Controls.Add(_btnUcitajMerenjaEvaluacije);
+
             _tabs.TabPages.Add(tabKorisnici);
             _tabs.TabPages.Add(tabOsoblje);
             _tabs.TabPages.Add(tabProstor);
@@ -165,6 +215,8 @@ namespace FitnessCentar.Presentation
             _tabs.TabPages.Add(tabClanarinePrograme);
             _tabs.TabPages.Add(tabTrening);
             _tabs.TabPages.Add(tabPlanTreninga);
+            _tabs.TabPages.Add(tabPlanIshrane);
+            _tabs.TabPages.Add(tabMerenjaEvaluacije);
             Controls.Add(_tabs);
 
             _btnUcitajKorisnike.Click += async (s, e) => await UcitajKorisnikeAsync();
@@ -193,6 +245,15 @@ namespace FitnessCentar.Presentation
             _btnDodajFazu.Click += async (s, e) => await DodajFazuAsync();
             _btnDodajNedelju.Click += async (s, e) => await DodajNedeljuAsync();
             _btnDodajVezbu.Click += async (s, e) => await DodajVezbuAsync();
+
+            _btnUcitajPlanoveIshrane.Click += async (s, e) => await UcitajPlanoveIshraneAsync();
+            _btnDodajPlanIshrane.Click += async (s, e) => await DodajPlanIshraneAsync();
+            _btnDodajObrok.Click += async (s, e) => await DodajObrokAsync();
+            _btnDodajOgranicenje.Click += async (s, e) => await DodajOgranicenjeAsync();
+
+            _btnUcitajMerenjaEvaluacije.Click += async (s, e) => await UcitajMerenjaEvaluacijeAsync();
+            _btnDodajMerenje.Click += async (s, e) => await DodajMerenjeAsync();
+            _btnDodajEvaluaciju.Click += async (s, e) => await DodajEvaluacijuAsync();
         }
 
         private async Task UcitajKorisnikeAsync()
@@ -545,6 +606,129 @@ namespace FitnessCentar.Presentation
                 ? "Vežba uspešno dodata - ceo lanac Plan -> Faza -> Nedelja -> Vežba radi!"
                 : $"GREŠKA: {rezultat.ErrorMessage}";
             _btnDodajVezbu.Enabled = true;
+        }
+
+        private async Task UcitajPlanoveIshraneAsync()
+        {
+            _btnUcitajPlanoveIshrane.Enabled = false;
+            _lblStatusPlanIshrane.Text = "Učitavanje...";
+            var rezultat = await _planIshraneService.GetAllAsync();
+            if (!rezultat.IsSuccess) _lblStatusPlanIshrane.Text = $"GREŠKA: {rezultat.ErrorMessage}";
+            else
+            {
+                _gridPlanIshrane.DataSource = rezultat.Data;
+                _lblStatusPlanIshrane.Text = $"Učitano {rezultat.Data?.Count ?? 0} planova ishrane.";
+            }
+            _btnUcitajPlanoveIshrane.Enabled = true;
+        }
+
+        private async Task DodajPlanIshraneAsync()
+        {
+            if (!int.TryParse(_txtKorisnikIdZaPlanIshrane.Text, out int korisnikId) ||
+                !int.TryParse(_txtNutricionistaIdZaPlan.Text, out int nutricionistaId))
+            {
+                _lblStatusPlanIshrane.Text = "Unesi validan ID korisnika i ID nutricioniste u polja iznad (korak 1).";
+                return;
+            }
+
+            _btnDodajPlanIshrane.Enabled = false;
+            var rezultat = await _planIshraneService.AddPlanAsync(korisnikId, nutricionistaId, $"Test plan ishrane {DateTime.Now:HHmmss}");
+            _lblStatusPlanIshrane.Text = rezultat.IsSuccess
+                ? "Plan ishrane dodat. Klikni 'Učitaj planove ishrane' da vidiš njegov ID."
+                : $"GREŠKA: {rezultat.ErrorMessage}";
+            _btnDodajPlanIshrane.Enabled = true;
+            if (rezultat.IsSuccess) await UcitajPlanoveIshraneAsync();
+        }
+
+        private async Task DodajObrokAsync()
+        {
+            if (!int.TryParse(_txtPlanIshraneIdZaObrok.Text, out int planIshraneId))
+            {
+                _lblStatusPlanIshrane.Text = "Unesi validan ID plana ishrane u polje (korak 2).";
+                return;
+            }
+
+            _btnDodajObrok.Enabled = false;
+            var rezultat = await _planIshraneService.AddObrokAsync(planIshraneId, "Doručak", 350, 20);
+            _lblStatusPlanIshrane.Text = rezultat.IsSuccess
+                ? "Obrok uspešno dodat."
+                : $"GREŠKA: {rezultat.ErrorMessage}";
+            _btnDodajObrok.Enabled = true;
+            if (rezultat.IsSuccess) await UcitajPlanoveIshraneAsync();
+        }
+
+        private async Task DodajOgranicenjeAsync()
+        {
+            if (!int.TryParse(_txtPlanIshraneIdZaOgranicenje.Text, out int planIshraneId))
+            {
+                _lblStatusPlanIshrane.Text = "Unesi validan ID plana ishrane u polje (korak 3).";
+                return;
+            }
+
+            _btnDodajOgranicenje.Enabled = false;
+            var rezultat = await _planIshraneService.AddOgranicenjeAsync(planIshraneId, "bez glutena");
+            _lblStatusPlanIshrane.Text = rezultat.IsSuccess
+                ? "Ograničenje uspešno dodato - ceo lanac Plan ishrane -> Obrok/Ograničenja radi!"
+                : $"GREŠKA: {rezultat.ErrorMessage}";
+            _btnDodajOgranicenje.Enabled = true;
+            if (rezultat.IsSuccess) await UcitajPlanoveIshraneAsync();
+        }
+
+        private async Task UcitajMerenjaEvaluacijeAsync()
+        {
+            _btnUcitajMerenjaEvaluacije.Enabled = false;
+            _lblStatusMerenjaEvaluacije.Text = "Učitavanje...";
+
+            var merenja = await _merenjeEvaluacijaService.GetAllMerenjaAsync();
+            var evaluacije = await _merenjeEvaluacijaService.GetAllEvaluacijeAsync();
+
+            if (!merenja.IsSuccess) _lblStatusMerenjaEvaluacije.Text = $"GREŠKA (merenja): {merenja.ErrorMessage}";
+            else if (!evaluacije.IsSuccess) _lblStatusMerenjaEvaluacije.Text = $"GREŠKA (evaluacije): {evaluacije.ErrorMessage}";
+            else
+            {
+                _gridMerenja.DataSource = merenja.Data;
+                _gridEvaluacije.DataSource = evaluacije.Data;
+                _lblStatusMerenjaEvaluacije.Text = $"Učitano {merenja.Data?.Count ?? 0} merenja i {evaluacije.Data?.Count ?? 0} evaluacija.";
+            }
+
+            _btnUcitajMerenjaEvaluacije.Enabled = true;
+        }
+
+        private async Task DodajMerenjeAsync()
+        {
+            if (!int.TryParse(_txtKorisnikIdZaMerenje.Text, out int korisnikId) ||
+                !int.TryParse(_txtOsobljeIdZaMerenje.Text, out int osobljeId))
+            {
+                _lblStatusMerenjaEvaluacije.Text = "Unesi validan ID korisnika i ID osoblja u polja iznad.";
+                return;
+            }
+
+            _btnDodajMerenje.Enabled = false;
+            var rezultat = await _merenjeEvaluacijaService.AddMerenjeAsync(korisnikId, osobljeId, "telesna masa", 80, "kg");
+            _lblStatusMerenjaEvaluacije.Text = rezultat.IsSuccess
+                ? "Test merenje uspešno dodato."
+                : $"GREŠKA: {rezultat.ErrorMessage}";
+            _btnDodajMerenje.Enabled = true;
+            if (rezultat.IsSuccess) await UcitajMerenjaEvaluacijeAsync();
+        }
+
+        private async Task DodajEvaluacijuAsync()
+        {
+            if (!int.TryParse(_txtKorisnikIdZaMerenje.Text, out int korisnikId) ||
+                !int.TryParse(_txtOsobljeIdZaMerenje.Text, out int osobljeId))
+            {
+                _lblStatusMerenjaEvaluacije.Text = "Unesi validan ID korisnika i ID osoblja u polja iznad.";
+                return;
+            }
+
+            _btnDodajEvaluaciju.Enabled = false;
+            var rezultat = await _merenjeEvaluacijaService.AddEvaluacijuAsync(
+                korisnikId, osobljeId, "Test opis napretka korisnika.", "Test preporuka za nastavak treninga.");
+            _lblStatusMerenjaEvaluacije.Text = rezultat.IsSuccess
+                ? "Test evaluacija uspešno dodata - poslednji klaster potvrđen!"
+                : $"GREŠKA: {rezultat.ErrorMessage}";
+            _btnDodajEvaluaciju.Enabled = true;
+            if (rezultat.IsSuccess) await UcitajMerenjaEvaluacijeAsync();
         }
     }
 }
