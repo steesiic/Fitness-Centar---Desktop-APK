@@ -30,6 +30,16 @@ namespace FitnessCentar
             services.AddTransient<IProstorService, ProstorService>();
             services.AddTransient<IOpremaService, OpremaService>();
 
+            // Servisi - Klaster 4
+            services.AddTransient<IClanarinaService, ClanarinaService>();
+            services.AddTransient<IFitnessProgramService, FitnessProgramService>();
+
+            // Servisi - Klaster 5
+            services.AddTransient<ITreningService, TreningService>();
+
+            // Servisi - Klaster 6
+            services.AddTransient<IPlanTreningaService, PlanTreningaService>();
+
             // Forme
             services.AddTransient<MainForm>();
 
