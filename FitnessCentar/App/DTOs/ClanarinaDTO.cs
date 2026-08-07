@@ -1,5 +1,4 @@
 ﻿using FitnessCentar.Entities;
-using FitnessCentar.Entities;
 
 namespace FitnessCentar.App.DTOs
 {

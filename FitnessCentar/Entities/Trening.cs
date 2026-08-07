@@ -6,7 +6,7 @@
 
         public virtual required string Naziv { get; set; }
 
-        public virtual string? Tip { get; set; }
+        public virtual required string Tip { get; set; }
 
         public virtual required DateTime DatumVreme { get; set; }
 

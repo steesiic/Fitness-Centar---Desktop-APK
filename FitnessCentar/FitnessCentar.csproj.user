@@ -4,5 +4,35 @@
     <Compile Update="Presentation\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Presentation\Sections\ClanarineIProgramiSection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Presentation\Sections\KorisniciSection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Presentation\Sections\MerenjeEvaluacijaSection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Presentation\Sections\OpremaSection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Presentation\Sections\OsobljeSection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Presentation\Sections\PlanIshraneSection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Presentation\Sections\PlanTreningaSection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Presentation\Sections\ProstorSection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Presentation\Sections\TreningSection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Presentation\UI\SectionPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

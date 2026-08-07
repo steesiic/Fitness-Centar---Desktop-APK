@@ -13,7 +13,7 @@ namespace FitnessCentar.Infrastructure.Mappers
             Id(x => x.TreningId).Column("TRENING_ID").GeneratedBy.TriggerIdentity();
 
             Map(x => x.Naziv).Column("NAZIV");
-            Map(x => x.Tip).Column("TIP");
+            Map(x => x.Tip).Column("TIP").Not.Nullable();
             Map(x => x.DatumVreme).Column("DATUM_VREME");
             Map(x => x.Status).Column("STATUS").CustomType<EnumStringType<StatusTreninga>>();
 
