@@ -18,7 +18,6 @@ namespace FitnessCentar.App.DTOs
 
         public StatusOsoblja Status { get; set; }
 
-        // Uloge (nivo Osoblje)
         public bool JeTrener { get; set; }
 
         public bool JeNutricionista { get; set; }
@@ -31,7 +30,6 @@ namespace FitnessCentar.App.DTOs
 
         public bool JeAdministrator { get; set; }
 
-        // Pod-uloge (nivo Trener) - relevantno samo ako JeTrener == true
         public bool JePersonalniTrener { get; set; }
 
         public bool JeGrupniTrener { get; set; }

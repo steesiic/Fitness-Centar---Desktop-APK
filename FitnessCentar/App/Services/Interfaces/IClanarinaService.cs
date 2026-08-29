@@ -8,7 +8,6 @@ namespace FitnessCentar.App.Services.Interfaces
 
         Task<ServiceResult<bool>> AddClanarinaAsync(ClanarinaDTO clanarinaDto);
 
-        // Testira CompositeId - upisuje korisnika u clanarinu (KORISNIK_CLANARINA)
         Task<ServiceResult<bool>> UpisiKorisnikaAsync(int korisnikId, int clanarinaId, DateTime datumPocetka, DateTime? datumIsteka);
     }
 }

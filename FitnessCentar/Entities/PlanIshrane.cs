@@ -5,9 +5,6 @@
         public virtual int PlanIshraneId { get; protected set; }
 
         public virtual required Korisnik Korisnik { get; set; }
-
-        // Referencira NUTRICIONISTA, ne generalno OSOBLJE (ispravka iz I faze,
-        // tekst zadatka kaze da planove ishrane kreiraju nutricionisti).
         public virtual required Nutricionista Nutricionista { get; set; }
 
         public virtual required string Naziv { get; set; }

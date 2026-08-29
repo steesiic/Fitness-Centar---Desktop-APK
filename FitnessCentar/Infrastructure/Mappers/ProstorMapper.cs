@@ -17,8 +17,6 @@ namespace FitnessCentar.Infrastructure.Mappers
             Map(x => x.Lokacija).Column("LOKACIJA");
             Map(x => x.RadnoVreme).Column("RADNO_VREME");
 
-            // Standardna 1:N veza (ne HasOne kompozicija) - Oprema ima svoj surogatni kljuc,
-            // ne deljeni PK sa Prostor. DDL nema ON DELETE CASCADE ovde, pa ni mapiranje ne kaskadira.
             HasMany(x => x.OpremaList)
                 .KeyColumn("PROSTOR_ID")
                 .LazyLoad()

@@ -1,8 +1,5 @@
 ﻿namespace FitnessCentar.Entities
 {
-    // Slozen kljuc (korisnik_id + clanarina_id + datum_pocetka) - omogucava da isti korisnik
-    // uzme istu clanarinu vise puta u razlicitim periodima. NHibernate zahteva da klase sa
-    // CompositeId() imaju svoje Equals/GetHashCode - bez toga baca gresku pri cuvanju/citanju.
     public class KorisnikClanarina
     {
         public virtual required Korisnik Korisnik { get; set; }

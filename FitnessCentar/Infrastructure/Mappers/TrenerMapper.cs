@@ -37,7 +37,6 @@ namespace FitnessCentar.Infrastructure.Mappers
                 .LazyLoad()
                 .Cascade.AllDeleteOrphan();
 
-            // Dalja preklapajuća specijalizacija Trenera (pod-uloge) - opet bez PropertyRef
             HasOne(x => x.PersonalniTrener).Cascade.All().LazyLoad();
             HasOne(x => x.GrupniTrener).Cascade.All().LazyLoad();
             HasOne(x => x.InstruktorPlivanja).Cascade.All().LazyLoad();

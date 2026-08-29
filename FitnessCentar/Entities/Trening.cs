@@ -12,15 +12,12 @@
 
         public virtual required StatusTreninga Status { get; set; }
 
-        // Opciona veza ka programu kom trening pripada (nullable FK u DDL-u)
         public virtual FitnessProgram? Program { get; set; }
 
-        // Specijalizacija #1 (disjunktna): tacno jedno od ova dva treba da bude popunjeno
         public virtual IndividualniTrening? IndividualniTrening { get; set; }
 
         public virtual GrupniTrening? GrupniTrening { get; set; }
 
-        // Specijalizacija #2 (disjunktna, NEZAVISNA od #1): tacno jedno od ova dva
         public virtual TradicionalniTrening? TradicionalniTrening { get; set; }
 
         public virtual OnlineTreningSesija? OnlineTreningSesija { get; set; }

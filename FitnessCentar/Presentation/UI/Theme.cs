@@ -1,14 +1,9 @@
 using System.Drawing.Drawing2D;
 
 namespace FitnessCentar.Presentation.UI
-{
-    /// <summary>
-    /// Zajednička paleta boja, fontovi i fabrike za kontrole - da svaka sekcija
-    /// izgleda konzistentno bez ponavljanja stilizacije po fajlu.
-    /// </summary>
+
     internal static class Theme
     {
-        // --- Boje ("Kao auto-salon") ---
         public static readonly Color SidebarBg = ColorTranslator.FromHtml("#D7E3EF");
         public static readonly Color SidebarBgDarker = ColorTranslator.FromHtml("#35507D");
         public static readonly Color SidebarText = ColorTranslator.FromHtml("#2C3E50");
@@ -24,7 +19,7 @@ namespace FitnessCentar.Presentation.UI
         public static readonly Color GridAltRow = ColorTranslator.FromHtml("#EAF1FB");
         public static readonly Color SidebarHover = ColorTranslator.FromHtml("#C3D4E8");
 
-        // --- Fontovi ---
+
         public static readonly Font FontBase = new("Segoe UI", 9.5f);
         public static readonly Font FontAppTitle = new("Segoe UI", 15f, FontStyle.Bold);
         public static readonly Font FontAppSubtitle = new("Segoe UI", 8.5f);
@@ -74,7 +69,7 @@ namespace FitnessCentar.Presentation.UI
                 Cursor = Cursors.Hand,
                 UseVisualStyleBackColor = false,
                 Margin = new Padding(0),
-                Tag = false // da li je aktivna
+                Tag = false 
             };
             btn.FlatAppearance.BorderSize = 0;
             btn.MouseEnter += (s, e) => { if (btn.Tag is false) btn.BackColor = SidebarHover; };
@@ -184,10 +179,6 @@ namespace FitnessCentar.Presentation.UI
             return card;
         }
 
-        /// <summary>
-        /// Stilizuje DataGridView: obojen header, naizmenične boje redova,
-        /// bez suvišnih ivica/kolone za dodavanje reda.
-        /// </summary>
         public static void StyleGrid(DataGridView grid)
         {
             grid.BackgroundColor = CardBg;
@@ -223,10 +214,7 @@ namespace FitnessCentar.Presentation.UI
             grid.AlternatingRowsDefaultCellStyle.SelectionForeColor = Color.White;
         }
 
-        /// <summary>
-        /// Programatski generisana ikonica aplikacije (monogram "FC") - bez potrebe
-        /// za dodatnim binarnim resursima.
-        /// </summary>
+
         public static Icon BuildAppIcon()
         {
             using var bmp = new Bitmap(64, 64);

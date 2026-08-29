@@ -12,7 +12,6 @@
 
         public virtual DateTime? DatumNabavke { get; set; }
 
-        // Status ima vrednost "na servisu" (razmak) - ostaje string, isto kao Tip.
         public virtual string? Status { get; set; }
 
         public virtual string? Lokacija { get; set; }

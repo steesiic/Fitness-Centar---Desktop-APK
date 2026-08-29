@@ -9,7 +9,6 @@ namespace FitnessCentar.Infrastructure.Mappers
         {
             Table("REKREATIVAC");
 
-            // Deljeni PK - ID se ne generiše ovde, preuzima se od povezanog Korisnika
             Id(x => x.KorisnikId).Column("KORISNIK_ID").GeneratedBy.Foreign("Korisnik");
 
             HasOne(x => x.Korisnik).Constrained();

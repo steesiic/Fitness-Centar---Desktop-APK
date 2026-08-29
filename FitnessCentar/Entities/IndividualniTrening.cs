@@ -10,7 +10,6 @@
 
         public virtual string? CiljeviTreninga { get; set; }
 
-        // Cista M:N (INDIVIDUALNI_TRENING_OSOBLJE) - trener(i) koji vode ovaj trening
         public virtual IList<Osoblje> Treneri { get; set; }
 
         public IndividualniTrening()

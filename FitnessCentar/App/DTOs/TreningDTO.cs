@@ -16,10 +16,9 @@ namespace FitnessCentar.App.DTOs
 
         public int? ProgramId { get; set; }
 
-        // Specijalizacija #1 - tačno jedno od dva mora biti true
         public bool JeIndividualni { get; set; }
 
-        public int? KorisnikId { get; set; }  // obavezno ako JeIndividualni
+        public int? KorisnikId { get; set; }
 
         public string? CiljeviTreninga { get; set; }
 
@@ -27,16 +26,14 @@ namespace FitnessCentar.App.DTOs
 
         public int? MaksUcesnika { get; set; }
 
-        // Specijalizacija #2 (nezavisna od #1) - tačno jedno od dva mora biti true
         public bool JeTradicionalni { get; set; }
 
-        public int? ProstorId { get; set; }  // obavezno ako JeTradicionalni
+        public int? ProstorId { get; set; }  
 
         public bool JeOnline { get; set; }
 
         public string? Platforma { get; set; }
 
-        // Za prikaz
         public string? KorisnikImePrezime { get; set; }
 
         public string? ProstorNaziv { get; set; }

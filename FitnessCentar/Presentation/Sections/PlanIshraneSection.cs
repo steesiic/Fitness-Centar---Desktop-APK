@@ -3,9 +3,7 @@ using FitnessCentar.Presentation.UI;
 
 namespace FitnessCentar.Presentation.Sections
 {
-    /// <summary>
-    /// Testira lanac Plan ishrane -> Obrok / Zdravstveno ograničenje, korak po korak.
-    /// </summary>
+
     internal sealed class PlanIshraneSection : SectionPanel
     {
         private readonly IPlanIshraneService _planIshraneService;

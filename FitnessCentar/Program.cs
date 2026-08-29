@@ -17,36 +17,25 @@ namespace FitnessCentar
 
             var services = new ServiceCollection();
 
-            // Data Layer
             services.AddSingleton<IDataLayer, DataLayer>();
 
-            // Servisi - Klaster 1
             services.AddTransient<IKorisnikService, KorisnikService>();
 
-            // Servisi - Klaster 2
             services.AddTransient<IOsobljeService, OsobljeService>();
 
-            // Servisi - Klaster 3
             services.AddTransient<IProstorService, ProstorService>();
             services.AddTransient<IOpremaService, OpremaService>();
 
-            // Servisi - Klaster 4
             services.AddTransient<IClanarinaService, ClanarinaService>();
             services.AddTransient<IFitnessProgramService, FitnessProgramService>();
 
-            // Servisi - Klaster 5
             services.AddTransient<ITreningService, TreningService>();
-
-            // Servisi - Klaster 6
             services.AddTransient<IPlanTreningaService, PlanTreningaService>();
 
-            // Servisi - Klaster 7
             services.AddTransient<IPlanIshraneService, PlanIshraneService>();
 
-            // Servisi - Klaster 8
             services.AddTransient<IMerenjeEvaluacijaService, MerenjeEvaluacijaService>();
 
-            // Forme
             services.AddTransient<MainForm>();
 
             ServiceProvider = services.BuildServiceProvider();

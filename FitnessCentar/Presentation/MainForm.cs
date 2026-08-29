@@ -4,11 +4,7 @@ using FitnessCentar.Presentation.UI;
 
 namespace FitnessCentar.Presentation
 {
-    /// <summary>
-    /// Glavni prozor - "školjka" aplikacije: bočna navigacija + sadržaj sekcije.
-    /// Svaka sekcija (Presentation/Sections/*) čuva svoju poslovnu logiku i pozive
-    /// servisa nepromenjene; ovde se samo bira koja je trenutno prikazana.
-    /// </summary>
+
     public class MainForm : Form
     {
         private readonly List<(string Title, Func<Control> Factory)> _sections;

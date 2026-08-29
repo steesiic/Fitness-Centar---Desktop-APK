@@ -26,23 +26,18 @@
 
         public virtual required StatusClanstva StatusClanstva { get; set; }
 
-        // Preklapajuća specijalizacija - KOMPOZICIJA, ne nasleđivanje.
-        // Korisnik može istovremeno biti Rekreativac I ProfesionalniSportista.
         public virtual Rekreativac? Rekreativac { get; set; }
 
         public virtual ProfesionalniSportista? ProfesionalniSportista { get; set; }
 
         public virtual RehabilitacioniKorisnik? RehabilitacioniKorisnik { get; set; }
 
-        // Multivalentni atributi (KORISNIK_CILJEVI, KORISNIK_ALERGIJE, KORISNIK_ZDRAVSTVENA_OGRANICENJA)
-        // - mapirani direktno kao kolekcije stringova, bez posebnih entitetskih klasa.
         public virtual IList<string> Ciljevi { get; set; }
 
         public virtual IList<string> Alergije { get; set; }
 
         public virtual IList<string> ZdravstvenaOgranicenja { get; set; }
 
-        // Jedan korisnik (maloletni) može imati više staratelja (npr. oba roditelja).
         public virtual IList<Staratelj> Staratelji { get; set; }
 
         public Korisnik()

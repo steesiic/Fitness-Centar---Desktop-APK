@@ -45,7 +45,6 @@ namespace FitnessCentar.App.Services.Implementation
             {
                 Korisnik korisnik = await session.LoadAsync<Korisnik>(korisnikId);
 
-                // Nutricionista deli PK sa Osoblje (OsobljeId) - isti obrazac ucitavanja kao svuda.
                 Nutricionista nutricionista = await session.LoadAsync<Nutricionista>(nutricionistaId);
 
                 var noviPlan = new PlanIshrane

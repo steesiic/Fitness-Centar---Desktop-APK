@@ -121,3 +121,4 @@ D:\faks\TRECA GODINA\sistemi baza\projekti\ostalo\ZA CLAUDE\Fitness-Centar---Des
 D:\faks\TRECA GODINA\sistemi baza\projekti\ostalo\ZA CLAUDE\Fitness-Centar---Desktop-APK\FitnessCentar\obj\Debug\net8.0-windows\FitnessCentar.genruntimeconfig.cache
 D:\faks\TRECA GODINA\sistemi baza\projekti\ostalo\ZA CLAUDE\Fitness-Centar---Desktop-APK\FitnessCentar\obj\Debug\net8.0-windows\ref\FitnessCentar.dll
 D:\faks\TRECA GODINA\sistemi baza\projekti\Fitness-Centar---Desktop-APK\FitnessCentar\obj\Debug\net8.0-windows\FitnessCentar.Presentation.Sections.OsobljeSection.resources
+D:\faks\TRECA GODINA\sistemi baza\projekti\Fitness-Centar---Desktop-APK\FitnessCentar\obj\Debug\net8.0-windows\FitnessCentar.Presentation.Sections.ClanarineIProgramiSection.resources

@@ -21,7 +21,6 @@ namespace FitnessCentar.Infrastructure.Mappers
 
             References(x => x.Prostor).Column("PROSTOR_ID").Not.Nullable().LazyLoad();
 
-            // DDL ima ON DELETE CASCADE za odrzavanje->oprema, pa i ovde Cascade.All()
             HasMany(x => x.OdrzavanjaList)
                 .KeyColumn("OPREMA_ID")
                 .LazyLoad()

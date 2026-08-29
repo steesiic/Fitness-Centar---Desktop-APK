@@ -9,7 +9,6 @@ namespace FitnessCentar.Infrastructure.Mappers
         {
             Table("KORISNIK_CLANARINA");
 
-            // CompositeId umesto Id() - kljuc su TRI kolone zajedno, ne jedna surogatna.
             CompositeId()
                 .KeyReference(x => x.Korisnik, "KORISNIK_ID")
                 .KeyReference(x => x.Clanarina, "CLANARINA_ID")

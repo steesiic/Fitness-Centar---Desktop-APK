@@ -39,8 +39,6 @@ namespace FitnessCentar.App.Services.Implementation
 
         public async Task<ServiceResult<bool>> AddTreningAsync(TreningDTO dto)
         {
-            // Poslovno pravilo koje ni baza ni NHibernate ne cuvaju sami -
-            // TACNO JEDNO od svake nezavisne specijalizacije mora biti izabrano.
             if (dto.JeIndividualni == dto.JeGrupni)
             {
                 return ServiceResult<bool>.Failure(

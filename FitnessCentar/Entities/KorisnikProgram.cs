@@ -1,6 +1,5 @@
 ﻿namespace FitnessCentar.Entities
 {
-    // Slozen kljuc (korisnik_id + program_id + datum_upisa) - isti obrazac kao KorisnikClanarina.
     public class KorisnikProgram
     {
         public virtual required Korisnik Korisnik { get; set; }

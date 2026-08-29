@@ -18,12 +18,10 @@
 
         public string? RasporedOdrzavanja { get; set; }
 
-        // Za prikaz
         public string ProstorNaziv { get; set; } = "";
 
         public int BrojOdrzavanja { get; set; }
 
-        // Za unos - kom prostoru oprema pripada
         public int ProstorId { get; set; }
     }
 }

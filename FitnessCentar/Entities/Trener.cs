@@ -8,15 +8,12 @@
 
         public virtual required Osoblje Osoblje { get; set; }
 
-        // Multivalentni atributi
         public virtual IList<string> Licence { get; set; }
 
         public virtual IList<string> Specijalizacije { get; set; }
 
         public virtual IList<string> Sertifikati { get; set; }
 
-        // Trener ima svoju dalju preklapajuću specijalizaciju (pod-uloge) - opet kompozicija,
-        // vezana za Trener.OsobljeId (ne direktno za Osoblje.OsobljeId)
         public virtual PersonalniTrener? PersonalniTrener { get; set; }
 
         public virtual GrupniTrener? GrupniTrener { get; set; }

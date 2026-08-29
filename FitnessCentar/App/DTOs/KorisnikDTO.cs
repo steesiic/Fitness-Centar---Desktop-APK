@@ -28,7 +28,6 @@ namespace FitnessCentar.App.DTOs
 
         public StatusClanstva StatusClanstva { get; set; }
 
-        // Za prikaz u tabeli - da li korisnik pripada datoj kategoriji
         public bool JeRekreativac { get; set; }
 
         public bool JeProfesionalniSportista { get; set; }

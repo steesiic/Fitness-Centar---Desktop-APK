@@ -24,17 +24,11 @@ namespace FitnessCentar.Infrastructure.Mappers
             Map(x => x.DatumUclanjenja).Column("DATUM_UCLANJENJA");
             Map(x => x.StatusClanstva).Column("STATUS_CLANSTVA").CustomType<EnumStringType<StatusClanstva>>();
 
-            // Preklapajuća specijalizacija - 1:1 preko DELJENOG PK (ne preko property-ref,
-            // jer je KorisnikId na podklasi istovremeno i PK i FK - standardni "constrained"
-            // one-to-one se poklapa po primarnom ključu, property-ref tu nije potreban).
+
             HasOne(x => x.Rekreativac).Cascade.All().LazyLoad();
             HasOne(x => x.ProfesionalniSportista).Cascade.All().LazyLoad();
             HasOne(x => x.RehabilitacioniKorisnik).Cascade.All().LazyLoad();
 
-            // Multivalentni atributi - kolekcije stringova, bez posebnih klasa
-            // LazyLoad() je OBAVEZAN ovde - bez njega se ove kolekcije eager spajaju
-            // u isti upit kao i HasOne veze, sto pravi kartezijanski proizvod i izaziva
-            // "more than one row" gresku kod ucitavanja Rekreativac/ProfesionalniSportista/itd.
             HasMany(x => x.Ciljevi)
                 .Table("KORISNIK_CILJEVI")
                 .KeyColumn("KORISNIK_ID")
@@ -56,7 +50,6 @@ namespace FitnessCentar.Infrastructure.Mappers
                 .LazyLoad()
                 .Cascade.AllDeleteOrphan();
 
-            // Jedan korisnik moze imati vise staratelja
             HasMany(x => x.Staratelji)
                 .KeyColumn("KORISNIK_ID")
                 .LazyLoad()

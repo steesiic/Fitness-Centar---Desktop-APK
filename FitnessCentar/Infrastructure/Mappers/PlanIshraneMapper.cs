@@ -13,8 +13,6 @@ namespace FitnessCentar.Infrastructure.Mappers
 
             References(x => x.Korisnik).Column("KORISNIK_ID").Not.Nullable().LazyLoad();
 
-            // OSOBLJE_ID kolona u bazi i dalje postoji, ali FK ograničenje cilja NUTRICIONISTA -
-            // References ovde mora da cilja isti C# tip (Nutricionista) da se poklopi sa FK.
             References(x => x.Nutricionista).Column("OSOBLJE_ID").Not.Nullable().LazyLoad();
 
             Map(x => x.Naziv).Column("NAZIV");

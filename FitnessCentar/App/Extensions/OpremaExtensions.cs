@@ -23,9 +23,6 @@ namespace FitnessCentar.App.Extensions
             };
         }
 
-        // Napomena: Prostor se ovde ne kreira (mora vec da postoji u bazi) - dodeljuje se
-        // u servisu preko session.Load<Prostor>(dto.ProstorId), zato ova metoda ne postavlja
-        // svojstvo Prostor direktno.
         public static Oprema CreateNewEntity(this OpremaDTO dto, Prostor prostor)
         {
             return new Oprema

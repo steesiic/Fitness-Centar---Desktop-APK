@@ -19,8 +19,6 @@ namespace FitnessCentar.Infrastructure.Mappers
             Map(x => x.PreporuceniProfil).Column("PREPORUCENI_PROFIL");
             Map(x => x.Ogranicenja).Column("OGRANICENJA");
 
-            // Cista M:N (OSOBLJE_PROGRAM nema dodatnih atributa) - mapirano samo sa ove strane,
-            // ne mora se dirati OsobljeMapper iz Klastera 2.
             HasManyToMany(x => x.Voditelji)
                 .Table("OSOBLJE_PROGRAM")
                 .ParentKeyColumn("PROGRAM_ID")

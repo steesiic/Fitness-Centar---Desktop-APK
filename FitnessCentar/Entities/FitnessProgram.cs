@@ -1,7 +1,5 @@
 ﻿namespace FitnessCentar.Entities
 {
-    // Nazvano FitnessProgram, ne "Program" - kolizija sa FitnessCentar.Program (Main ulazna tačka).
-    // Tabela u bazi je i dalje PROGRAM (vidi Table("PROGRAM") u mapiranju).
     public class FitnessProgram
     {
         public virtual int ProgramId { get; protected set; }
@@ -18,7 +16,6 @@
 
         public virtual string? Ogranicenja { get; set; }
 
-        // M:N bez dodatnih atributa (OSOBLJE_PROGRAM) - "nosioci programa" iz teksta zadatka
         public virtual IList<Osoblje> Voditelji { get; set; }
 
         public FitnessProgram()

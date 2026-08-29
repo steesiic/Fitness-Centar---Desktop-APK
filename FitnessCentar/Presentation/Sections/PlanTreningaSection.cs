@@ -3,10 +3,7 @@ using FitnessCentar.Presentation.UI;
 
 namespace FitnessCentar.Presentation.Sections
 {
-    /// <summary>
-    /// Testira ceo lanac Plan -> Faza -> Nedelja -> Vežba, korak po korak
-    /// (isti tok kao original, samo grupisan u kartice po koraku).
-    /// </summary>
+
     internal sealed class PlanTreningaSection : SectionPanel
     {
         private readonly IPlanTreningaService _planTreningaService;

@@ -15,8 +15,6 @@
         public virtual required DateTime DatumZaposlenja { get; set; }
 
         public virtual required StatusOsoblja Status { get; set; }
-
-        // Preklapajuće uloge - kompozicija (jedna osoba može biti i Trener i Nutricionista istovremeno)
         public virtual Trener? Trener { get; set; }
 
         public virtual Nutricionista? Nutricionista { get; set; }

@@ -43,8 +43,6 @@ namespace FitnessCentar.App.Services.Implementation
 
             try
             {
-                // Load umesto Get - pravi samo "referencu" (proxy) ka postojećem Prostoru,
-                // bez nepotrebnog SELECT-a, jer nam treba samo za FK pri INSERT-u.
                 Prostor prostor = await session.LoadAsync<Prostor>(opremaDto.ProstorId);
 
                 Oprema novaOprema = opremaDto.CreateNewEntity(prostor);

@@ -1,18 +1,6 @@
 namespace FitnessCentar.Presentation.UI
 {
-    /// <summary>
-    /// Zajednički "skelet" za svaku sekciju sadržaja: naslov + podnaslov, grupisane
-    /// akcije (dugmad/polja u GroupBox-u), oblast za grid(ove) i statusna traka.
-    /// Konkretne sekcije (Presentation/Sections/*) samo popunjavaju ActionsFlow i
-    /// ContentHost - poslovna logika (pozivi servisa) ostaje identična originalu.
-    ///
-    /// Namerno je sve složeno kroz TableLayoutPanel sa EKSPLICITNIM redovima
-    /// (Controls.Add(control, kolona, red)), a ne kroz ručno slaganje više
-    /// kontrola sa istim Dock=Top/Bottom/Fill - kod tog pristupa redosled
-    /// dodavanja u Controls kolekciju suptilno utiče na to koja kontrola
-    /// "pobeđuje" ivicu, što je izazvalo preklapanje statusne trake i header-a.
-    /// TableLayoutPanel red/kolona su nedvosmisleni, bez tog rizika.
-    /// </summary>
+
     internal abstract class SectionPanel : UserControl
     {
         protected readonly FlowLayoutPanel ActionsFlow;
@@ -78,10 +66,10 @@ namespace FitnessCentar.Presentation.UI
 
             var root = new TableLayoutPanel { Dock = DockStyle.Fill, ColumnCount = 1, RowCount = 4 };
             root.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100f));
-            root.RowStyles.Add(new RowStyle(SizeType.AutoSize));       // naslov
-            root.RowStyles.Add(new RowStyle(SizeType.AutoSize));       // akcije
-            root.RowStyles.Add(new RowStyle(SizeType.Percent, 100f));  // sadržaj (grid/ovi)
-            root.RowStyles.Add(new RowStyle(SizeType.Absolute, 30f));  // status
+            root.RowStyles.Add(new RowStyle(SizeType.AutoSize));       
+            root.RowStyles.Add(new RowStyle(SizeType.AutoSize));       
+            root.RowStyles.Add(new RowStyle(SizeType.Percent, 100f)); 
+            root.RowStyles.Add(new RowStyle(SizeType.Absolute, 30f)); 
             root.Controls.Add(titleWrap, 0, 0);
             root.Controls.Add(actionsBox, 0, 1);
             root.Controls.Add(ContentHost, 0, 2);
@@ -92,7 +80,7 @@ namespace FitnessCentar.Presentation.UI
 
         protected void SetStatus(string text, bool? success = null) => Theme.SetStatus(StatusLabel, text, success);
 
-        /// <summary>Smesti jedan grid, uokviren kartom, da ispuni ContentHost.</summary>
+
         protected void PutSingleGrid(DataGridView grid)
         {
             Theme.StyleGrid(grid);
@@ -102,7 +90,6 @@ namespace FitnessCentar.Presentation.UI
             ContentHost.Controls.Add(card);
         }
 
-        /// <summary>Smesti dva grida jedan iznad drugog, svaki sa natpisom i kartom.</summary>
         protected void PutTwoGrids(string caption1, DataGridView grid1, string caption2, DataGridView grid2, float firstRowPercent = 38f)
         {
             Theme.StyleGrid(grid1);

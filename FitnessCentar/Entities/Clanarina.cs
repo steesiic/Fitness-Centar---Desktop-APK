@@ -17,8 +17,6 @@
         public virtual string? Ogranicenja { get; set; }
     }
 
-    // Sve vrednosti su jednorečne (bez razmaka), pa ovde enum radi - za razliku od
-    // PROSTOR.tip/OPREMA.status koji su ostali kao string.
     public enum TipClanarine
     {
         mesecna,

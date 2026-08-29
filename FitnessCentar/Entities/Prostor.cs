@@ -6,9 +6,6 @@
 
         public virtual required string Naziv { get; set; }
 
-        // Tip ima vrednosti sa razmakom (npr. "kardio zona", "sala za grupne treninge"),
-        // pa je ostavljen kao string, ne enum (C# enum članovi ne mogu imati razmak).
-        // Validnost i dalje čuva CHECK ograničenje na bazi.
         public virtual required string Tip { get; set; }
 
         public virtual int? Kapacitet { get; set; }

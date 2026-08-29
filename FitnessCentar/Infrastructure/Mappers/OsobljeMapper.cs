@@ -19,7 +19,6 @@ namespace FitnessCentar.Infrastructure.Mappers
             Map(x => x.DatumZaposlenja).Column("DATUM_ZAPOSLENJA");
             Map(x => x.Status).Column("STATUS").CustomType<EnumStringType<StatusOsoblja>>();
 
-            // Preklapajuće uloge - deljeni PK, BEZ .PropertyRef() (lekcija iz Klastera 1)
             HasOne(x => x.Trener).Cascade.All().LazyLoad();
             HasOne(x => x.Nutricionista).Cascade.All().LazyLoad();
             HasOne(x => x.Fizioterapeut).Cascade.All().LazyLoad();
