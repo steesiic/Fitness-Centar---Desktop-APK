@@ -1,7 +1,7 @@
 using System.Drawing.Drawing2D;
 
 namespace FitnessCentar.Presentation.UI
-
+{ 
     internal static class Theme
     {
         public static readonly Color SidebarBg = ColorTranslator.FromHtml("#D7E3EF");

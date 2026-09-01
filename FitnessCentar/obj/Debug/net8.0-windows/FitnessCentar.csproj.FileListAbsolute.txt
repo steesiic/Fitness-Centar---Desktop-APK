@@ -122,3 +122,41 @@ D:\faks\TRECA GODINA\sistemi baza\projekti\ostalo\ZA CLAUDE\Fitness-Centar---Des
 D:\faks\TRECA GODINA\sistemi baza\projekti\ostalo\ZA CLAUDE\Fitness-Centar---Desktop-APK\FitnessCentar\obj\Debug\net8.0-windows\ref\FitnessCentar.dll
 D:\faks\TRECA GODINA\sistemi baza\projekti\Fitness-Centar---Desktop-APK\FitnessCentar\obj\Debug\net8.0-windows\FitnessCentar.Presentation.Sections.OsobljeSection.resources
 D:\faks\TRECA GODINA\sistemi baza\projekti\Fitness-Centar---Desktop-APK\FitnessCentar\obj\Debug\net8.0-windows\FitnessCentar.Presentation.Sections.ClanarineIProgramiSection.resources
+C:\Users\Jetko\Desktop\FAKS\III godina\SBP\Projekti\2\Fitness-Centar---Desktop-APK\FitnessCentar\obj\Debug\net8.0-windows\FitnessCentar.csproj.AssemblyReference.cache
+C:\Users\Jetko\Desktop\FAKS\III godina\SBP\Projekti\2\Fitness-Centar---Desktop-APK\FitnessCentar\obj\Debug\net8.0-windows\FitnessCentar.Presentation.MainForm.resources
+C:\Users\Jetko\Desktop\FAKS\III godina\SBP\Projekti\2\Fitness-Centar---Desktop-APK\FitnessCentar\obj\Debug\net8.0-windows\FitnessCentar.Presentation.Sections.ClanarineIProgramiSection.resources
+C:\Users\Jetko\Desktop\FAKS\III godina\SBP\Projekti\2\Fitness-Centar---Desktop-APK\FitnessCentar\obj\Debug\net8.0-windows\FitnessCentar.Presentation.Sections.OsobljeSection.resources
+C:\Users\Jetko\Desktop\FAKS\III godina\SBP\Projekti\2\Fitness-Centar---Desktop-APK\FitnessCentar\obj\Debug\net8.0-windows\FitnessCentar.Presentation.Sections.PlanTreningaSection.resources
+C:\Users\Jetko\Desktop\FAKS\III godina\SBP\Projekti\2\Fitness-Centar---Desktop-APK\FitnessCentar\obj\Debug\net8.0-windows\FitnessCentar.Presentation.UI.SectionPanel.resources
+C:\Users\Jetko\Desktop\FAKS\III godina\SBP\Projekti\2\Fitness-Centar---Desktop-APK\FitnessCentar\obj\Debug\net8.0-windows\FitnessCentar.csproj.GenerateResource.cache
+C:\Users\Jetko\Desktop\FAKS\III godina\SBP\Projekti\2\Fitness-Centar---Desktop-APK\FitnessCentar\obj\Debug\net8.0-windows\FitnessCentar.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jetko\Desktop\FAKS\III godina\SBP\Projekti\2\Fitness-Centar---Desktop-APK\FitnessCentar\obj\Debug\net8.0-windows\FitnessCentar.AssemblyInfoInputs.cache
+C:\Users\Jetko\Desktop\FAKS\III godina\SBP\Projekti\2\Fitness-Centar---Desktop-APK\FitnessCentar\obj\Debug\net8.0-windows\FitnessCentar.AssemblyInfo.cs
+C:\Users\Jetko\Desktop\FAKS\III godina\SBP\Projekti\2\Fitness-Centar---Desktop-APK\FitnessCentar\obj\Debug\net8.0-windows\FitnessCentar.csproj.CoreCompileInputs.cache
+C:\Users\Jetko\Desktop\FAKS\III godina\SBP\Projekti\2\Fitness-Centar---Desktop-APK\FitnessCentar\obj\Debug\net8.0-windows\FitnessCentar.sourcelink.json
+C:\Users\Jetko\Desktop\FAKS\III godina\SBP\Projekti\2\Fitness-Centar---Desktop-APK\FitnessCentar\obj\Debug\net8.0-windows\FitnessCentar.dll
+C:\Users\Jetko\Desktop\FAKS\III godina\SBP\Projekti\2\Fitness-Centar---Desktop-APK\FitnessCentar\obj\Debug\net8.0-windows\refint\FitnessCentar.dll
+C:\Users\Jetko\Desktop\FAKS\III godina\SBP\Projekti\2\Fitness-Centar---Desktop-APK\FitnessCentar\obj\Debug\net8.0-windows\FitnessCentar.pdb
+C:\Users\Jetko\Desktop\FAKS\III godina\SBP\Projekti\2\Fitness-Centar---Desktop-APK\FitnessCentar\bin\Debug\net8.0-windows\FitnessCentar.exe
+C:\Users\Jetko\Desktop\FAKS\III godina\SBP\Projekti\2\Fitness-Centar---Desktop-APK\FitnessCentar\bin\Debug\net8.0-windows\FitnessCentar.dll.config
+C:\Users\Jetko\Desktop\FAKS\III godina\SBP\Projekti\2\Fitness-Centar---Desktop-APK\FitnessCentar\bin\Debug\net8.0-windows\FitnessCentar.deps.json
+C:\Users\Jetko\Desktop\FAKS\III godina\SBP\Projekti\2\Fitness-Centar---Desktop-APK\FitnessCentar\bin\Debug\net8.0-windows\FitnessCentar.runtimeconfig.json
+C:\Users\Jetko\Desktop\FAKS\III godina\SBP\Projekti\2\Fitness-Centar---Desktop-APK\FitnessCentar\bin\Debug\net8.0-windows\FitnessCentar.dll
+C:\Users\Jetko\Desktop\FAKS\III godina\SBP\Projekti\2\Fitness-Centar---Desktop-APK\FitnessCentar\bin\Debug\net8.0-windows\FitnessCentar.pdb
+C:\Users\Jetko\Desktop\FAKS\III godina\SBP\Projekti\2\Fitness-Centar---Desktop-APK\FitnessCentar\bin\Debug\net8.0-windows\Antlr3.Runtime.dll
+C:\Users\Jetko\Desktop\FAKS\III godina\SBP\Projekti\2\Fitness-Centar---Desktop-APK\FitnessCentar\bin\Debug\net8.0-windows\FluentNHibernate.dll
+C:\Users\Jetko\Desktop\FAKS\III godina\SBP\Projekti\2\Fitness-Centar---Desktop-APK\FitnessCentar\bin\Debug\net8.0-windows\Iesi.Collections.dll
+C:\Users\Jetko\Desktop\FAKS\III godina\SBP\Projekti\2\Fitness-Centar---Desktop-APK\FitnessCentar\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Jetko\Desktop\FAKS\III godina\SBP\Projekti\2\Fitness-Centar---Desktop-APK\FitnessCentar\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Jetko\Desktop\FAKS\III godina\SBP\Projekti\2\Fitness-Centar---Desktop-APK\FitnessCentar\bin\Debug\net8.0-windows\NHibernate.dll
+C:\Users\Jetko\Desktop\FAKS\III godina\SBP\Projekti\2\Fitness-Centar---Desktop-APK\FitnessCentar\bin\Debug\net8.0-windows\Oracle.ManagedDataAccess.dll
+C:\Users\Jetko\Desktop\FAKS\III godina\SBP\Projekti\2\Fitness-Centar---Desktop-APK\FitnessCentar\bin\Debug\net8.0-windows\Remotion.Linq.dll
+C:\Users\Jetko\Desktop\FAKS\III godina\SBP\Projekti\2\Fitness-Centar---Desktop-APK\FitnessCentar\bin\Debug\net8.0-windows\Remotion.Linq.EagerFetching.dll
+C:\Users\Jetko\Desktop\FAKS\III godina\SBP\Projekti\2\Fitness-Centar---Desktop-APK\FitnessCentar\bin\Debug\net8.0-windows\System.Collections.Immutable.dll
+C:\Users\Jetko\Desktop\FAKS\III godina\SBP\Projekti\2\Fitness-Centar---Desktop-APK\FitnessCentar\bin\Debug\net8.0-windows\System.DirectoryServices.Protocols.dll
+C:\Users\Jetko\Desktop\FAKS\III godina\SBP\Projekti\2\Fitness-Centar---Desktop-APK\FitnessCentar\bin\Debug\net8.0-windows\runtimes\linux\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\Jetko\Desktop\FAKS\III godina\SBP\Projekti\2\Fitness-Centar---Desktop-APK\FitnessCentar\bin\Debug\net8.0-windows\runtimes\osx\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\Jetko\Desktop\FAKS\III godina\SBP\Projekti\2\Fitness-Centar---Desktop-APK\FitnessCentar\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\Jetko\Desktop\FAKS\III godina\SBP\Projekti\2\Fitness-Centar---Desktop-APK\FitnessCentar\obj\Debug\net8.0-windows\FitnessC.825CBD80.Up2Date
+C:\Users\Jetko\Desktop\FAKS\III godina\SBP\Projekti\2\Fitness-Centar---Desktop-APK\FitnessCentar\obj\Debug\net8.0-windows\FitnessCentar.genruntimeconfig.cache
+C:\Users\Jetko\Desktop\FAKS\III godina\SBP\Projekti\2\Fitness-Centar---Desktop-APK\FitnessCentar\obj\Debug\net8.0-windows\ref\FitnessCentar.dll

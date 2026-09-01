@@ -1,6 +1,5 @@
 ﻿using FitnessCentar.App.DTOs;
 using FitnessCentar.Entities;
-
 namespace FitnessCentar.App.Extensions
 {
     public static class KorisnikExtensions
@@ -24,10 +23,17 @@ namespace FitnessCentar.App.Extensions
                 JeRekreativac = korisnik.Rekreativac != null,
                 JeProfesionalniSportista = korisnik.ProfesionalniSportista != null,
                 JeRehabilitacioniKorisnik = korisnik.RehabilitacioniKorisnik != null,
-                Ciljevi = korisnik.Ciljevi
+                Ciljevi = korisnik.Ciljevi.ToList(),
+
+                Sport = korisnik.ProfesionalniSportista?.Sport,
+                Klub = korisnik.ProfesionalniSportista?.Klub,
+                NivoTakmicenja = korisnik.ProfesionalniSportista?.NivoTakmicenja,
+
+                PreporukaLekara = korisnik.RehabilitacioniKorisnik?.PreporukaLekara,
+                Ogranicenja = korisnik.RehabilitacioniKorisnik?.Ogranicenja,
+                TipRehabilitacije = korisnik.RehabilitacioniKorisnik?.TipRehabilitacije
             };
         }
-
         public static Korisnik CreateNewEntity(this KorisnikDTO dto)
         {
             var korisnik = new Korisnik
@@ -44,15 +50,35 @@ namespace FitnessCentar.App.Extensions
                 DatumUclanjenja = dto.DatumUclanjenja,
                 StatusClanstva = dto.StatusClanstva
             };
-
             foreach (var cilj in dto.Ciljevi)
             {
                 korisnik.Ciljevi.Add(cilj);
             }
-
             if (dto.JeRekreativac)
             {
                 korisnik.Rekreativac = new Rekreativac { Korisnik = korisnik };
+            }
+
+            if (dto.JeProfesionalniSportista)
+            {
+                korisnik.ProfesionalniSportista = new ProfesionalniSportista
+                {
+                    Korisnik = korisnik,
+                    Sport = string.IsNullOrWhiteSpace(dto.Sport) ? "Nepoznat sport" : dto.Sport,
+                    Klub = dto.Klub,
+                    NivoTakmicenja = dto.NivoTakmicenja
+                };
+            }
+
+            if (dto.JeRehabilitacioniKorisnik)
+            {
+                korisnik.RehabilitacioniKorisnik = new RehabilitacioniKorisnik
+                {
+                    Korisnik = korisnik,
+                    PreporukaLekara = dto.PreporukaLekara,
+                    Ogranicenja = dto.Ogranicenja,
+                    TipRehabilitacije = dto.TipRehabilitacije
+                };
             }
 
             return korisnik;

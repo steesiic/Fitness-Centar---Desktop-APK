@@ -1,6 +1,5 @@
 ﻿using FitnessCentar.App.DTOs;
 using FitnessCentar.Entities;
-
 namespace FitnessCentar.App.Extensions
 {
     public static class OsobljeExtensions
@@ -27,10 +26,15 @@ namespace FitnessCentar.App.Extensions
                 JeInstruktorPlivanja = osoblje.Trener?.InstruktorPlivanja != null,
                 JeYogaInstruktor = osoblje.Trener?.YogaInstruktor != null,
                 JeOnlineTrener = osoblje.Trener?.OnlineTrener != null,
-                NivoIskustvaTrenera = osoblje.Trener?.NivoIskustva
+                NivoIskustvaTrenera = osoblje.Trener?.NivoIskustva,
+
+                FizioterapeutLicencaDatum = osoblje.Fizioterapeut?.LicencaDatum,
+                FizioterapeutLicencaInstitucija = osoblje.Fizioterapeut?.LicencaInstitucija,
+
+                LekarLicencaDatum = osoblje.Lekar?.LicencaDatum,
+                LekarLicencaInstitucija = osoblje.Lekar?.LicencaInstitucija
             };
         }
-
         public static Osoblje CreateNewEntity(this OsobljeDTO dto)
         {
             var osoblje = new Osoblje
@@ -42,33 +46,47 @@ namespace FitnessCentar.App.Extensions
                 DatumZaposlenja = dto.DatumZaposlenja,
                 Status = dto.Status
             };
-
             if (dto.JeTrener)
             {
                 var trener = new Trener { Osoblje = osoblje, NivoIskustva = dto.NivoIskustvaTrenera };
-
                 if (dto.JePersonalniTrener) trener.PersonalniTrener = new PersonalniTrener { Trener = trener };
                 if (dto.JeGrupniTrener) trener.GrupniTrener = new GrupniTrener { Trener = trener };
                 if (dto.JeInstruktorPlivanja) trener.InstruktorPlivanja = new InstruktorPlivanja { Trener = trener };
                 if (dto.JeYogaInstruktor) trener.YogaInstruktor = new YogaInstruktor { Trener = trener };
                 if (dto.JeOnlineTrener) trener.OnlineTrener = new OnlineTrener { Trener = trener };
-
                 osoblje.Trener = trener;
             }
-
             if (dto.JeNutricionista)
             {
                 osoblje.Nutricionista = new Nutricionista { Osoblje = osoblje };
             }
-
             if (dto.JeRecepcioner)
             {
                 osoblje.Recepcioner = new Recepcioner { Osoblje = osoblje };
             }
-
             if (dto.JeAdministrator)
             {
                 osoblje.Administrator = new Administrator { Osoblje = osoblje };
+            }
+
+            if (dto.JeFizioterapeut)
+            {
+                osoblje.Fizioterapeut = new Fizioterapeut
+                {
+                    Osoblje = osoblje,
+                    LicencaDatum = dto.FizioterapeutLicencaDatum,
+                    LicencaInstitucija = dto.FizioterapeutLicencaInstitucija
+                };
+            }
+
+            if (dto.JeLekar)
+            {
+                osoblje.Lekar = new Lekar
+                {
+                    Osoblje = osoblje,
+                    LicencaDatum = dto.LekarLicencaDatum,
+                    LicencaInstitucija = dto.LekarLicencaInstitucija
+                };
             }
 
             return osoblje;
