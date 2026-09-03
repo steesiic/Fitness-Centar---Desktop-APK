@@ -9,23 +9,23 @@ namespace FitnessCentar.Presentation.Sections
         private readonly IPlanTreningaService _planTreningaService;
 
         private readonly DataGridView _grid = new() { AutoGenerateColumns = true };
-        private readonly Button _btnUcitaj = Theme.CreateActionButton("Učitaj planove");
+        private readonly Button _btnUcitaj = Theme.CreateActionButton("Učitaj");
 
-        private readonly TextBox _txtKorisnikId = Theme.CreateInput("ID korisnika (npr. 1)", 150);
-        private readonly TextBox _txtOsobljeId = Theme.CreateInput("ID osoblja - trener (npr. 1)", 170);
-        private readonly Button _btnDodajPlan = Theme.CreateActionButton("1. Dodaj plan treninga", Theme.AccentDark);
+        private readonly TextBox _txtKorisnikId = Theme.CreateInput("ID korisnika", 80);
+        private readonly TextBox _txtOsobljeId = Theme.CreateInput("ID osoblja", 70);
+        private readonly Button _btnDodajPlan = Theme.CreateActionButton("1. Dodaj plan", Theme.AccentDark);
 
-        private readonly TextBox _txtPlanIdZaFazu = Theme.CreateInput("ID plana (iz koraka 1)", 170);
-        private readonly Button _btnDodajFazu = Theme.CreateActionButton("2. Dodaj fazu (redosled 1)", Theme.AccentDark);
+        private readonly TextBox _txtPlanIdZaFazu = Theme.CreateInput("ID plana", 60);
+        private readonly Button _btnDodajFazu = Theme.CreateActionButton("2. Dodaj fazu", Theme.AccentDark);
 
-        private readonly TextBox _txtFazaIdZaNedelju = Theme.CreateInput("ID faze (iz koraka 2)", 170);
-        private readonly Button _btnDodajNedelju = Theme.CreateActionButton("3. Dodaj nedelju (broj 1)", Theme.AccentDark);
+        private readonly TextBox _txtFazaIdZaNedelju = Theme.CreateInput("ID faze", 60);
+        private readonly Button _btnDodajNedelju = Theme.CreateActionButton("3. Dodaj nedelju", Theme.AccentDark);
 
-        private readonly TextBox _txtNedeljaIdZaVezbu = Theme.CreateInput("ID nedelje (iz koraka 3)", 170);
+        private readonly TextBox _txtNedeljaIdZaVezbu = Theme.CreateInput("ID nedelje", 70);
         private readonly Button _btnDodajVezbu = Theme.CreateActionButton("4. Dodaj vežbu", Theme.AccentDark);
 
         public PlanTreningaSection(IPlanTreningaService planTreningaService)
-            : base("Plan treninga", "Test celog lanca: Plan → Faza → Nedelja → Vežba.")
+            : base("Plan treninga")
         {
             _planTreningaService = planTreningaService;
 
@@ -77,7 +77,7 @@ namespace FitnessCentar.Presentation.Sections
             if (!int.TryParse(_txtKorisnikId.Text, out int korisnikId) ||
                 !int.TryParse(_txtOsobljeId.Text, out int osobljeId))
             {
-                SetStatus("Unesi validan ID korisnika i ID osoblja u polja iznad (korak 1).", false);
+                SetStatus("Unesi validan ID korisnika i osoblja u polja iznad.", false);
                 return;
             }
 

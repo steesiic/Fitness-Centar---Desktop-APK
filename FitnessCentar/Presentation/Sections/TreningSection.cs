@@ -10,14 +10,14 @@ namespace FitnessCentar.Presentation.Sections
         private readonly ITreningService _treningService;
 
         private readonly DataGridView _grid = new() { AutoGenerateColumns = true };
-        private readonly Button _btnUcitaj = Theme.CreateActionButton("Učitaj treninge");
-        private readonly TextBox _txtKorisnikId = Theme.CreateInput("ID korisnika (za individualni test, npr. 1)", 240);
-        private readonly TextBox _txtProstorId = Theme.CreateInput("ID prostora (za tradicionalni test, npr. 1)", 240);
-        private readonly Button _btnDodajIndividualniTradicionalni = Theme.CreateActionButton("Dodaj: Individualni + Tradicionalni", Theme.AccentDark);
-        private readonly Button _btnDodajGrupniOnline = Theme.CreateActionButton("Dodaj: Grupni + Online", Theme.AccentDark);
+        private readonly Button _btnUcitaj = Theme.CreateActionButton("Učitaj");
+        private readonly TextBox _txtKorisnikId = Theme.CreateInput("ID korisnika", 80);
+        private readonly TextBox _txtProstorId = Theme.CreateInput("ID prostora", 80);
+        private readonly Button _btnDodajIndividualniTradicionalni = Theme.CreateActionButton("Dodaj: Ind.+Trad.", Theme.AccentDark);
+        private readonly Button _btnDodajGrupniOnline = Theme.CreateActionButton("Dodaj: Gr.+Onl.", Theme.AccentDark);
 
         public TreningSection(ITreningService treningService)
-            : base("Trening", "Pregled treninga i test unos individualnog/tradicionalnog i grupnog/online treninga.")
+            : base("Trening")
         {
             _treningService = treningService;
 
@@ -54,7 +54,7 @@ namespace FitnessCentar.Presentation.Sections
             if (!int.TryParse(_txtKorisnikId.Text, out int korisnikId) ||
                 !int.TryParse(_txtProstorId.Text, out int prostorId))
             {
-                SetStatus("Unesi validan ID korisnika i ID prostora u polja iznad.", false);
+                SetStatus("Unesi validan ID korisnika i prostora u polja iznad.", false);
                 return;
             }
 

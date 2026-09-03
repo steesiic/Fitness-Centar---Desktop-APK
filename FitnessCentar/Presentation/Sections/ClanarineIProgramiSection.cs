@@ -13,15 +13,15 @@ namespace FitnessCentar.Presentation.Sections
         private readonly DataGridView _gridClanarine = new() { AutoGenerateColumns = true };
         private readonly DataGridView _gridProgrami = new() { AutoGenerateColumns = true };
 
-        private readonly Button _btnUcitaj = Theme.CreateActionButton("Učitaj članarine i programe");
-        private readonly Button _btnDodajClanarinu = Theme.CreateActionButton("Dodaj test članarinu", Theme.AccentDark);
-        private readonly Button _btnDodajProgram = Theme.CreateActionButton("Dodaj test program", Theme.AccentDark);
-        private readonly TextBox _txtUpisKorisnikId = Theme.CreateInput("ID korisnika za upis (npr. 1)", 180);
-        private readonly TextBox _txtUpisClanarinaId = Theme.CreateInput("ID članarine za upis (npr. 1)", 180);
-        private readonly Button _btnUpisi = Theme.CreateActionButton("Upiši korisnika u članarinu (test složenog ključa)", Color.FromArgb(0x6B, 0x21, 0xA8));
+        private readonly Button _btnUcitaj = Theme.CreateActionButton("Učitaj");
+        private readonly Button _btnDodajClanarinu = Theme.CreateActionButton("Dodaj članarinu", Theme.AccentDark);
+        private readonly Button _btnDodajProgram = Theme.CreateActionButton("Dodaj program", Theme.AccentDark);
+        private readonly TextBox _txtUpisKorisnikId = Theme.CreateInput("ID za upis", 80);
+        private readonly TextBox _txtUpisClanarinaId = Theme.CreateInput("ID za upis", 80);
+        private readonly Button _btnUpisi = Theme.CreateActionButton("Upiši korisnika u članarinu", Color.FromArgb(0x6B, 0x21, 0xA8));
 
         public ClanarineIProgramiSection(IClanarinaService clanarinaService, IFitnessProgramService programService)
-            : base("Članarine i programi", "Pregled članarina i fitnes programa, i test upisa korisnika u članarinu.")
+            : base("Članarine i programi")
         {
             _clanarinaService = clanarinaService;
             _programService = programService;

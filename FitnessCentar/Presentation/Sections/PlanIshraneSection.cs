@@ -9,20 +9,20 @@ namespace FitnessCentar.Presentation.Sections
         private readonly IPlanIshraneService _planIshraneService;
 
         private readonly DataGridView _grid = new() { AutoGenerateColumns = true };
-        private readonly Button _btnUcitaj = Theme.CreateActionButton("Učitaj planove ishrane");
+        private readonly Button _btnUcitaj = Theme.CreateActionButton("Učitaj");
 
-        private readonly TextBox _txtKorisnikId = Theme.CreateInput("ID korisnika (npr. 1)", 150);
-        private readonly TextBox _txtNutricionistaId = Theme.CreateInput("ID osoblja - nutricionista (npr. 1)", 190);
-        private readonly Button _btnDodajPlan = Theme.CreateActionButton("1. Dodaj plan ishrane", Theme.AccentDark);
+        private readonly TextBox _txtKorisnikId = Theme.CreateInput("ID korisnika", 80);
+        private readonly TextBox _txtNutricionistaId = Theme.CreateInput("ID osoblja", 70);
+        private readonly Button _btnDodajPlan = Theme.CreateActionButton("1.Dodaj plan", Theme.AccentDark);
 
-        private readonly TextBox _txtPlanIdZaObrok = Theme.CreateInput("ID plana ishrane (iz koraka 1)", 190);
-        private readonly Button _btnDodajObrok = Theme.CreateActionButton("2. Dodaj obrok", Theme.AccentDark);
+        private readonly TextBox _txtPlanIdZaObrok = Theme.CreateInput("ID plana", 65);
+        private readonly Button _btnDodajObrok = Theme.CreateActionButton("2.Dodaj obrok", Theme.AccentDark);
 
-        private readonly TextBox _txtPlanIdZaOgranicenje = Theme.CreateInput("ID plana ishrane (isti kao gore)", 190);
-        private readonly Button _btnDodajOgranicenje = Theme.CreateActionButton("3. Dodaj ograničenje (bez glutena)", Theme.AccentDark);
+        private readonly TextBox _txtPlanIdZaOgranicenje = Theme.CreateInput("ID plana", 65);
+        private readonly Button _btnDodajOgranicenje = Theme.CreateActionButton("3.Dodaj ogr.", Theme.AccentDark);
 
         public PlanIshraneSection(IPlanIshraneService planIshraneService)
-            : base("Plan ishrane", "Test lanca: Plan ishrane → Obrok / Zdravstveno ograničenje.")
+            : base("Plan ishrane")
         {
             _planIshraneService = planIshraneService;
 
@@ -69,7 +69,7 @@ namespace FitnessCentar.Presentation.Sections
             if (!int.TryParse(_txtKorisnikId.Text, out int korisnikId) ||
                 !int.TryParse(_txtNutricionistaId.Text, out int nutricionistaId))
             {
-                SetStatus("Unesi validan ID korisnika i ID nutricioniste u polja iznad (korak 1).", false);
+                SetStatus("Unesi validan ID korisnika i nutricioniste u polja iznad.", false);
                 return;
             }
 
@@ -86,7 +86,7 @@ namespace FitnessCentar.Presentation.Sections
         {
             if (!int.TryParse(_txtPlanIdZaObrok.Text, out int planIshraneId))
             {
-                SetStatus("Unesi validan ID plana ishrane u polje (korak 2).", false);
+                SetStatus("Unesi validan ID plana ishrane u polje.", false);
                 return;
             }
 
@@ -103,7 +103,7 @@ namespace FitnessCentar.Presentation.Sections
         {
             if (!int.TryParse(_txtPlanIdZaOgranicenje.Text, out int planIshraneId))
             {
-                SetStatus("Unesi validan ID plana ishrane u polje (korak 3).", false);
+                SetStatus("Unesi validan ID plana ishrane u polje.", false);
                 return;
             }
 

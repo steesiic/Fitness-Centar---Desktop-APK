@@ -10,14 +10,14 @@ namespace FitnessCentar.Presentation.Sections
         private readonly DataGridView _gridMerenja = new() { AutoGenerateColumns = true };
         private readonly DataGridView _gridEvaluacije = new() { AutoGenerateColumns = true };
 
-        private readonly Button _btnUcitaj = Theme.CreateActionButton("Učitaj merenja i evaluacije");
-        private readonly TextBox _txtKorisnikId = Theme.CreateInput("ID korisnika (npr. 1)", 170);
-        private readonly TextBox _txtOsobljeId = Theme.CreateInput("ID osoblja koje meri (npr. 1)", 190);
-        private readonly Button _btnDodajMerenje = Theme.CreateActionButton("Dodaj test merenje", Theme.AccentDark);
-        private readonly Button _btnDodajEvaluaciju = Theme.CreateActionButton("Dodaj test evaluaciju (isti ID-jevi iznad)", Theme.AccentDark);
+        private readonly Button _btnUcitaj = Theme.CreateActionButton("Učitaj");
+        private readonly TextBox _txtKorisnikId = Theme.CreateInput("ID korisnika", 80);
+        private readonly TextBox _txtOsobljeId = Theme.CreateInput("ID osoblja koje meri", 130);
+        private readonly Button _btnDodajMerenje = Theme.CreateActionButton("Dodaj merenje", Theme.AccentDark);
+        private readonly Button _btnDodajEvaluaciju = Theme.CreateActionButton("Dodaj evaluaciju", Theme.AccentDark);
 
         public MerenjeEvaluacijaSection(IMerenjeEvaluacijaService merenjeEvaluacijaService)
-            : base("Merenje i evaluacija", "Pregled i test unos merenja i evaluacija napretka korisnika.")
+            : base("Merenje i evaluacija")
         {
             _merenjeEvaluacijaService = merenjeEvaluacijaService;
 
@@ -61,7 +61,7 @@ namespace FitnessCentar.Presentation.Sections
             if (!int.TryParse(_txtKorisnikId.Text, out int korisnikId) ||
                 !int.TryParse(_txtOsobljeId.Text, out int osobljeId))
             {
-                SetStatus("Unesi validan ID korisnika i ID osoblja u polja iznad.", false);
+                SetStatus("Unesi validan ID korisnika i osoblja u polja iznad.", false);
                 return;
             }
 
@@ -79,7 +79,7 @@ namespace FitnessCentar.Presentation.Sections
             if (!int.TryParse(_txtKorisnikId.Text, out int korisnikId) ||
                 !int.TryParse(_txtOsobljeId.Text, out int osobljeId))
             {
-                SetStatus("Unesi validan ID korisnika i ID osoblja u polja iznad.", false);
+                SetStatus("Unesi validan ID korisnika i osoblja u polja iznad.", false);
                 return;
             }
 

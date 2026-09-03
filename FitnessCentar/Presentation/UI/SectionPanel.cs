@@ -7,7 +7,7 @@ namespace FitnessCentar.Presentation.UI
         protected readonly Panel ContentHost;
         protected readonly Label StatusLabel;
 
-        protected SectionPanel(string title, string subtitle)
+        protected SectionPanel(string title)
         {
             Dock = DockStyle.Fill;
             BackColor = Theme.ContentBg;
@@ -35,29 +35,29 @@ namespace FitnessCentar.Presentation.UI
                 ForeColor = Theme.TextDark,
                 Margin = new Padding(0)
             };
-            var subtitleLbl = new Label
-            {
-                Text = subtitle,
-                AutoSize = true,
-                Font = Theme.FontSectionSubtitle,
-                ForeColor = Theme.TextMuted,
-                Margin = new Padding(0, 2, 0, 12)
-            };
             titleWrap.Controls.Add(titleLbl, 0, 0);
-            titleWrap.Controls.Add(subtitleLbl, 0, 1);
-
             var actionsBox = Theme.CreateGroupBox("Akcije");
-            actionsBox.Dock = DockStyle.Fill;
             ActionsFlow = new FlowLayoutPanel
             {
-                Dock = DockStyle.Fill,
                 AutoSize = true,
                 AutoSizeMode = AutoSizeMode.GrowAndShrink,
                 FlowDirection = FlowDirection.LeftToRight,
                 WrapContents = true,
-                Padding = new Padding(4, 6, 4, 0)
+                Padding = new Padding(4, 6, 4, 0),
+                Location = new Point(0, 0)
             };
             actionsBox.Controls.Add(ActionsFlow);
+
+            void OgraniciSirinu()
+            {
+                if (actionsBox.ClientSize.Width > 0)
+                {
+                    ActionsFlow.MaximumSize = new Size(actionsBox.ClientSize.Width, 0);
+                }
+                actionsBox.PerformLayout();
+            }
+            actionsBox.SizeChanged += (s, e) => OgraniciSirinu();
+            ActionsFlow.SizeChanged += (s, e) => actionsBox.PerformLayout();
 
             ContentHost = new Panel { Dock = DockStyle.Fill, Padding = new Padding(0) };
 
@@ -66,16 +66,18 @@ namespace FitnessCentar.Presentation.UI
 
             var root = new TableLayoutPanel { Dock = DockStyle.Fill, ColumnCount = 1, RowCount = 4 };
             root.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100f));
-            root.RowStyles.Add(new RowStyle(SizeType.AutoSize));       
-            root.RowStyles.Add(new RowStyle(SizeType.AutoSize));       
-            root.RowStyles.Add(new RowStyle(SizeType.Percent, 100f)); 
-            root.RowStyles.Add(new RowStyle(SizeType.Absolute, 30f)); 
+            root.RowStyles.Add(new RowStyle(SizeType.AutoSize));
+            root.RowStyles.Add(new RowStyle(SizeType.AutoSize));
+            root.RowStyles.Add(new RowStyle(SizeType.Percent, 100f));
+            root.RowStyles.Add(new RowStyle(SizeType.Absolute, 30f));
             root.Controls.Add(titleWrap, 0, 0);
             root.Controls.Add(actionsBox, 0, 1);
             root.Controls.Add(ContentHost, 0, 2);
             root.Controls.Add(StatusLabel, 0, 3);
 
             Controls.Add(root);
+
+            Load += (s, e) => OgraniciSirinu();
         }
 
         protected void SetStatus(string text, bool? success = null) => Theme.SetStatus(StatusLabel, text, success);

@@ -10,11 +10,11 @@ namespace FitnessCentar.Presentation.Sections
         private readonly IKorisnikService _korisnikService;
 
         private readonly DataGridView _grid = new() { AutoGenerateColumns = true };
-        private readonly Button _btnUcitaj = Theme.CreateActionButton("Učitaj korisnike");
-        private readonly Button _btnDodaj = Theme.CreateActionButton("Dodaj test korisnika", Theme.AccentDark);
+        private readonly Button _btnUcitaj = Theme.CreateActionButton("Učitaj");
+        private readonly Button _btnDodaj = Theme.CreateActionButton("Dodaj test", Theme.AccentDark);
 
         public KorisniciSection(IKorisnikService korisnikService)
-            : base("Korisnici", "Pregled i test unos korisnika fitnes centra.")
+            : base("Korisnici")
         {
             _korisnikService = korisnikService;
 

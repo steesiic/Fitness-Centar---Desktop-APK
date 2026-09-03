@@ -85,7 +85,7 @@ namespace FitnessCentar.Presentation.UI
             btn.Font = active ? FontNavActive : FontNav;
         }
 
-        public static TextBox CreateInput(string placeholder, int width = 220)
+        public static TextBox CreateInput(string placeholder, int width = 50)
         {
             return new TextBox
             {

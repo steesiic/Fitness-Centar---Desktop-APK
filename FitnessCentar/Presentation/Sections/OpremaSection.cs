@@ -9,12 +9,12 @@ namespace FitnessCentar.Presentation.Sections
         private readonly IOpremaService _opremaService;
 
         private readonly DataGridView _grid = new() { AutoGenerateColumns = true };
-        private readonly Button _btnUcitaj = Theme.CreateActionButton("Učitaj opremu");
-        private readonly TextBox _txtProstorId = Theme.CreateInput("ID prostora kom oprema pripada (npr. 1)");
-        private readonly Button _btnDodaj = Theme.CreateActionButton("Dodaj test opremu za uneti ID prostora", Theme.AccentDark);
+        private readonly Button _btnUcitaj = Theme.CreateActionButton("Učitaj");
+        private readonly TextBox _txtProstorId = Theme.CreateInput("ID prostora", 80);
+        private readonly Button _btnDodaj = Theme.CreateActionButton("Dodaj test", Theme.AccentDark);
 
         public OpremaSection(IOpremaService opremaService)
-            : base("Oprema", "Pregled i test unos opreme, vezane za konkretan prostor.")
+            : base("Oprema")
         {
             _opremaService = opremaService;
 
@@ -46,7 +46,7 @@ namespace FitnessCentar.Presentation.Sections
         {
             if (!int.TryParse(_txtProstorId.Text, out int prostorId))
             {
-                SetStatus("Prvo unesi validan ID prostora (npr. 1) u polje iznad.", false);
+                SetStatus("Prvo unesi validan ID u polje iznad.", false);
                 return;
             }
             _btnDodaj.Enabled = false;

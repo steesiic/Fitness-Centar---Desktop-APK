@@ -9,11 +9,11 @@ namespace FitnessCentar.Presentation.Sections
         private readonly IProstorService _prostorService;
 
         private readonly DataGridView _grid = new() { AutoGenerateColumns = true };
-        private readonly Button _btnUcitaj = Theme.CreateActionButton("Učitaj prostore");
-        private readonly Button _btnDodaj = Theme.CreateActionButton("Dodaj test prostor", Theme.AccentDark);
+        private readonly Button _btnUcitaj = Theme.CreateActionButton("Učitaj");
+        private readonly Button _btnDodaj = Theme.CreateActionButton("Dodaj test", Theme.AccentDark);
 
         public ProstorSection(IProstorService prostorService)
-            : base("Prostor", "Pregled i test unos prostora (teretane, sale, tereni...).")
+            : base("Prostor")
         {
             _prostorService = prostorService;
 
