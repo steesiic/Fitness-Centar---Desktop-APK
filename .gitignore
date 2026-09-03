@@ -19,6 +19,9 @@ bld/
 *.suo
 *.userprefs
 *.sln.docstates
+.vs/
+bin/
+obj/
 
 ## NuGet
 *.nupkg
