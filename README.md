@@ -2,6 +2,7 @@
 Drugi projekat iz predmeta Sistemi Baza Podataka
 
 Prvi projekat: https://github.com/Jodz4/Fitness_Centar_baza_podataka
+
 Treci projekat: https://github.com/mi1anche/Fitness_Centar_TreciProjekat
 
 Na osnovu baze podataka koju ste projektovali za I domaći zadatak, treba kreirati desktop aplikaciju koja za pristup podacima koristi komponentu baziranu na korišćenju NHibernate ORM biblioteke. Kao rezultat domaćeg zadatka predajete:
